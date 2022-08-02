@@ -1,0 +1,20 @@
+/* general styling */
+    *{
+        font-family: var(--manrope_font);
+    }
+/* general styling */
+
+
+/* password sub text  */
+.input_area .lower_text{
+    display:flex;
+    justify-content: space-between;
+}
+.input_area .lower_text a{
+    color:  #097E72;
+    text-decoration:none;
+}
+.caution_text{
+    text-align: center;
+}
+/* password sub text  */
