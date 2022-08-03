@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+
+.forget-text{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #202020;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.forget-title, .reset-title{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #0B9789;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    letter-spacing: 1.2px;
+}
+
+.forgotBtn{
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.forgotinput{
+    padding: 13px 10px;
+}
+
+.reset-title{
+    margin-bottom: 50px; 
+}
+
+.reset_new_password{
+    margin-bottom: 30px;
+}
+
+.new_password_input{
+    position: relative;
+}
+
+.show_password, .hide_password{
+    position: absolute;
+    padding: 8px 0;
+    border: none;
+    background: transparent;
+    right: 5px;
+}
+.pageTitle img{
+    width: 400px;
+    height: 400px;
+}
+
+.resetpg_title, .forgetpg_title{
+    margin-top: 80px;
+}
