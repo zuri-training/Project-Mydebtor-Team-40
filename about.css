@@ -60,6 +60,7 @@ h2, p {
 
 .write-up h2 {
     font-size: 40px;
+    color: #021E1B;
 }
 
 .write-up p {
@@ -67,6 +68,7 @@ h2, p {
     text-align: justify;
     font-size: 24px;
     margin-top: 20px;
+    color: #202020;
 }
 
 #stats {
@@ -109,4 +111,67 @@ h2, p {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+@media (max-width: 425px) {
+    #banner {
+        height: 208px;
+        background-size: 100% 100%;
+    }
+
+    #banner p {
+        max-width: 90%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .write-up {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .write-up h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        margin: 30px 0;
+    }
+
+    .write-up p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .write-up img {
+        width: 279.22px;
+        height: auto;
+        border-radius: 9px;
+    }
+
+    .write-up:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #stats {
+        height: 161px;
+        flex-wrap: wrap;
+    }
+
+    #stats h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    #stats p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #stats div {
+        width: 40%;
+    }
 }
