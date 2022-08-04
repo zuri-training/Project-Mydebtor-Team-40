@@ -189,6 +189,12 @@ footer {
     color: #fff;
 }
 
+#foot-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
 #foot-top {
     height: 100%;
     width: 100%;
@@ -259,4 +265,112 @@ h6 {
 
 #copyright p {
     margin-left: 5%;
+}
+
+@media (max-width: 425px) {
+    body {
+        background-color: #097E72;
+    }
+
+    header {
+        height: 64px;
+        display: flex;
+        font-family: inherit;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #headline {
+        height: 150px;
+        align-items: center;
+    }
+
+    #headline p {
+            width: 80%;
+            height: auto;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            margin: 0;
+    }
+
+    #container {
+        border-radius: 24px 24px 0 0;
+        height: auto;
+    }
+    
+    #contact {
+        /* background-color: #fff; */
+        border-radius: 24px 24px 0 0;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #form-bx {
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 24px 24px 0 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #details {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #details div {
+        margin-top: 15px;
+        background-color: #fff;
+        width: 90%;
+        color: #000;
+    }
+
+    #details h5 {
+        margin: 0;
+    }
+
+    #details ul {
+        margin: 0;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer p {
+        max-width: 210px;
+        font-size: 16px;
+    }
+
+    svg {
+        width: 18px;
+        height: auto;
+    }
+
+    #foot-logo {
+        height: 23.98px;
+        width: auto;
+    }
+
+    #foot-stuff {
+        flex-direction: column;
+        margin: 40px 0 40px 5%;
+    }
+
+    #foot-list {
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
