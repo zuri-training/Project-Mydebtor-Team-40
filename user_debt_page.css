@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: no-repeat url("Ellipse.png"), #CEEAE7;
+    background-size: 100% 20vh, auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.user_img img{
+    margin: 15% auto;
+    width: 240px;
+    height: 240px;
+    background: url(.jpg);
+    border-radius: 50%;
+}
+
+table{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    color: #101010;
+    margin-bottom: 5%;
+}
+button{
+    padding: 10px;
+    background: #FFFFFF;   
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    width: 250px;
+}
+#contend_debt{
+    border: 3px solid #04322E;
+    border-radius: 8px;
+}
+#acknowledge_debt{
+    background: #04322E;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
