@@ -19,10 +19,12 @@ h1{
 h2{
     font-size:48px;
     font-weight:600;
+    text-transform: capitalize;
 }
 h4{
     font-size:28px;
     font-weight:600;
+    text-transform: capitalize;
 }
 p{
     font-size:16px;
@@ -196,4 +198,62 @@ width:50%;
 .third_section h4{
     font-size:20px;
 }
-/* start of our services to explore  */
+/* end of our services to explore  */
+
+/* start of trusted by 100 schools  */
+.fourth_section{
+    margin:5% 0;
+}
+.fourth_section .title{
+    text-align:center;
+    margin-bottom: 5%;
+}
+.fourth_section .school_box{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    row-gap:2.5rem;
+}
+.fourth_section .school_box .image_box{
+    display:flex;
+    margin:5%;
+}
+.fourth_section .school_box p{
+    font-size:10px;
+    margin-left:5%;
+}
+/* end of trusted by 100 schools  */
+
+/* start of your information safe and secure  */
+.fifth_section{
+    background: #07655B;
+    padding:5%;
+    color:white;
+    display: grid;
+    place-items: center;
+}
+.fifth_section .icon_box{
+    margin:2%
+}
+.fifth_section .icon_box img{
+    border-bottom: 1px white solid;
+    padding:5% 0;
+}
+.fifth_section .title{
+    text-align: center;
+}
+.fifth_section p{
+    margin: 2% auto;
+    width:70%;
+    font-size:20px;
+    font-weight:200;
+    line-height: 30px;
+}
+.fifth_section a{
+    text-decoration: none;
+    color:#fff;
+    font-size:14px;
+}
+.fifth_section a:hover{
+    opacity: 0.5;
+}
+/* end of your information safe and secure  */
