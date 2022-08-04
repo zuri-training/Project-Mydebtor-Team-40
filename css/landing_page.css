@@ -1,0 +1,130 @@
+/* start of general styling */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+/* body{
+background-color: #34A89D;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--manrope_font);
+}
+h1{
+    font-size:50px;
+    font-weight:800;
+}
+h2{
+    font-size:48px;
+}
+p{
+    font-size:20px;
+    font-weight:400;
+}
+/*  start of buttons  */
+.button-group button{
+    border: 1px solid;
+    border-radius:5px;
+    padding:10px 20px;
+    margin-right:6px;
+    }
+    .button-group .sign_in{
+        background-color: transparent;
+        color:#202020;
+        border-color:#202020
+        
+    }
+    .button-group .sign_in:hover{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register:hover{
+        color: #097E72;
+        background-color:transparent;
+
+    }
+    /*  end of buttons  */
+/* end of general styling */
+
+/* start of navigation bar  */
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:1% 5%;
+    background-color:#fff;
+}
+nav .image_logo img{
+    width:150px;
+    color:#34A89D;
+}
+
+/* start of navigation links  */
+.nav-links{
+    display: flex;
+}
+nav .nav_links a{
+    padding-bottom:5px;
+    padding:10px;
+    text-decoration:none;
+    color:#202020;
+    font-size:14px;
+}
+nav .nav_links a:hover,
+nav .nav_links .active{
+    border-bottom:3px solid #34A89D;
+    color:#34A89D;
+}
+/* end of navigation links  */
+
+/* end of navigation bar  */
+
+/* start of hero section  */
+.first_section{
+    padding:5% 0;
+    background-image: url("../images/Mask\ group.png");
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.first_section .left_side{
+    margin:1%;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+
+}
+.first_box .right_side{
+    width:50%;
+}
+.first_section .image_box{
+    height:450px;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+.first_section .right_side .first{
+    width:320px;
+    height:100%;
+    margin-left:5%
+}
+.first_section .right_side .second,
+.first_section .right_side .third{
+    width:120px;
+    height:100%;
+    margin-left:5%;
+}
+
+/* end of hero section  */
+
+/* start of who our services for */
+
+/* end of who our services for */
