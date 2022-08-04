@@ -18,9 +18,14 @@ h1{
 }
 h2{
     font-size:48px;
+    font-weight:600;
+}
+h4{
+    font-size:28px;
+    font-weight:600;
 }
 p{
-    font-size:20px;
+    font-size:16px;
     font-weight:400;
 }
 /*  start of buttons  */
@@ -87,14 +92,19 @@ nav .nav_links .active{
 /* end of navigation bar  */
 
 /* start of hero section  */
+.hero{
+    background:  url("../images/Mask\ group.png") ;
+  }
 .first_section{
     padding:5% 0;
-    background-image: url("../images/Mask\ group.png");
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:center;
+    background-color: rgba(224, 209, 209, 0.8);
+    backdrop-filter: blur(60px);
 }
+
 .first_section .left_side{
     margin:1%;
     width:50%;
@@ -126,5 +136,64 @@ nav .nav_links .active{
 /* end of hero section  */
 
 /* start of who our services for */
-
+.second_section{
+    padding:3%;
+    display:grid;
+    place-items:center;
+}
+.second_section .image_group{
+    display:flex;
+    text-align:center;
+    margin-top:2%;
+}
+.second_section .image_group .image_box{
+    width:50%;
+    margin:1% 2%;
+}
+.second_section .image_box img{
+    width:550px;
+}
+.second_section .image_box h4{
+    margin:2% 0;
+}
 /* end of who our services for */
+
+/* start of our services to explore  */
+.background{
+    background: url('../images/Mask group.png');
+}
+.third_section{
+    padding:5% 0;
+    background-color: rgba(224, 209, 209, 0.8);
+    backdrop-filter: blur(60px);
+}
+.third_section .title{
+    text-align:center;
+}
+.third_section .full_box{
+    display:flex;
+    margin:2% 2% 0 2%;
+
+}
+.third_section .image_box{
+    display:grid;
+    place-items: center;
+}
+.third_section .content_box{
+padding:0 5%;
+width:50%;
+
+}
+.third_section .detail_box{
+    display:flex;
+    margin:2%;
+}
+.third_section .icon_box{
+    display:grid;
+    place-items: center;
+    margin-right:5%;
+}
+.third_section h4{
+    font-size:20px;
+}
+/* start of our services to explore  */
