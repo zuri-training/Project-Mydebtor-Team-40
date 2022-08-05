@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/signup_response.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup_response.css">
     <title>Sign Up - StuDebt</title>
 </head>
 <body>
@@ -24,46 +24,38 @@
         <!-- the form and its content -->
         <div class="sign_up_Form">
             <div class="userSelect-Btn">
-                <div class="AdminBtn">
+                <div class="AdminBtn active">
                    <a href="index.html">Administrative</a>
                    <hr>
                 </div>
                 
-                <div class="PersonalBtn active">
+                <div class="PersonalBtn">
                     <a href="personal_sign_up.html">Personal</a>
                     <hr>
                 </div>
             </div>
             
             <div class="userForm">
-                <form action="" class="sign_up--Personal">
-                    <!-- Parents Name and name of ward -->
+                <form action="">
+                    <!-- school name -->
                     <div class="input_area outline">
                         <div>
                             <label for="">Name</label>
                         </div>
                         <div>
-                            <input class="max_input" id="parent_name" type="text" placeholder="Enter school name">
-                        </div>
-                    </div>
-                    <div class="input_area outline">
-                        <div>
-                            <label for="">Ward's Name</label>
-                        </div>
-                        <div>
-                            <input class="max_input" id="ward_name" type="text" placeholder="Enter the name of your ward">
+                            <input class="max_input" type="text" placeholder="Enter school name">
                         </div>
                     </div>
                     
-                    <!-- The current school the student is attending -->
+                    <!-- State the school is located -->
                     <div class="input_area">
                         <div class="outline sectA">
                             <div>
-                               <label for="">School</label> 
+                               <label for="">State</label> 
                             </div>
                             <div>
-                                <select class="min_input" name="" id="school_attended">
-                                    <option class="select" value="">Select School</option>
+                                <select class="min_input" name="State" id="State">
+                                    <option class="select" value="">Select State</option>
                                     <option value="">Option 1</option>
                                     <option value="">Option 1</option>
                                     <option value="">Option 1</option>
@@ -71,24 +63,61 @@
                             </div>
                         </div>
                         
-                        <!-- Reg no the school gave the student -->
+                        <!-- Local Government the school is located -->
                         <div class="outline sectA">
                             <div class="sectA--TAB">
-                                <label for="">Registration Number</label>
+                                <label for="">Local Government Area</label>
                             </div>
                             <div>
-                                <input class="min_input" id="reg_no" type="text" placeholder="Enter ward's reg no">
+                                <select class="min_input" name="" id="">
+                                    <option class="select" value="">Select LGA</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                     
+                    <div class="input_area outline">
+                        <div>
+                            <label for="">Street Address</label>
+                        </div>
+                        <div>
+                            <input class="max_input" type="text" placeholder="Enter street address">
+                        </div>
+                    </div>
+                    
+                    <div class="input_area">
+                        <div class="outline sectA">
+                            <div>
+                                <label for="">Registration Number</label>
+                            </div>
+                            <div>
+                                <input class="min_input" type="text" placeholder="Enter school name">
+                            </div>
+                        </div>
+                        
+                        <div class="outline sectA">
+                            <div class="sectA--TAB">
+                              <label for="">School Category</label>  
+                            </div>
+                            <div>
+                                <select class="min_input" name="" id="">
+                                    <option class="select" value="">Enter school category</option>
+                                    <option value="">Primary</option>
+                                    <option value="">Secondary</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="input_area outline">
                         <div>
                             <label for="">Email Address</label>
                         </div>
                         <div>
-                            <input class="max_input" id="user_email" type="email" placeholder="Enter school email address">
+                            <input class="max_input" type="email" placeholder="Enter school email address">
                         </div>
                     </div>
                     
@@ -97,12 +126,12 @@
                             <label for="">Password</label>
                         </div>
                         <div>
-                            <input class="max_input" id="password" type="password" placeholder="Enter password">
+                            <input class="max_input" type="password" placeholder="Enter password">
                             <p class="password_note">Password must be at least 8 characters long</p>
                         </div>
                     </div>
     
-                    <button class="submitBtn" value="submit" type="submit">Sign Up</button>
+                    <button class="submitBtn" type="submit">Sign Up</button>
                 </form>
             </div>
             

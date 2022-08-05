@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+#dashboard{
+    position: relative;
+}
+.dashboard__student h1 span{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #04322E;
+    display: none;
+}
+.returnBtn{
+    background: transparent;
+    border: 2px solid rgba(4, 50, 46, 0.5);
+    border-radius: 50%;
+    font-size: 40px;
+    color: solid rgba(4, 50, 46, 0.5);
+    padding: 2px 15px;
+}
+
+.dashboard__student--container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard__student--tab{
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    background: #CEEAE7;
+    border-radius: 4px;
+    border: none;
+    color: #000000;
+}
+.dashboard__student--tab h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+}
+
+.dashboard__student--tab:hover{
+    background-color: #097E72;
+    border: 2px solid black;
+    color: white;
+    box-shadow: #04322E 5px 5px 2px;
+}
+
+.student_biodata, .sponsor_biodata, .finance{
+    display: none;
+}
+
+/* indicators */
+.form_stage--indicator{
+    display: flex;
+    gap: 2%;
+    margin: 3% 5%;
+}
+.indicator{
+    width: 380px;
+    height: 20px;
+    background: #85CBC4;
+    border-radius: 100px;
+}
+.active_indicator{
+    background: #34A89D;
+}
+
+.biodata--entry{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bio_data h2{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    color: #04322E;
+}
+
+.biodata--image{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 50%;
+    margin-left: 27%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.biodata--image_passport{
+    width: 259px;
+    height: 255px;
+    background: #CEEAE7;
+    border: 5px solid #07655B;
+    border-radius: 4px;
+}
+.biodata--image_passport img{
+    width: 250px;
+    height: 245px;
+}
+#profile_picture{
+    display: none;
+}
+.biodata--image_Btn label{
+    padding: 5px 40px;
+    border: none;
+    background: #097E72;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+form{
+    width: 100%;
+    padding: 0 4%;
+}
+.form_layer{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form_layer--slide{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_layer--slide_input{
+    width: 40%;
+}
+
+.form_layer--slide_input label{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b2525;
+}
+
+.form_layer--slide_input input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #021E1B;
+    outline: none;
+}
+
+.double_tab{
+    display: flex;
+    justify-content: space-between;
+}
+.double_tab_sect select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #021E1B;
+}
+
+.saveBtn{
+    margin: 5% 0;
+    padding: 10px 0 ;
+    width: 200px;
+    background: #097E72;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+#prevBtn_1, #prevBtn_1{
+    float: left;
+}
+#saveBtn_1, #saveBtn_2, #saveBtn_3{
+    float: right;
+}

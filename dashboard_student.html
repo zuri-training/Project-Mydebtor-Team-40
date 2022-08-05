@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard_student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <title>School -- StuDebt</title>
+</head>
+<body>
+    <!-- sidebar -->
+    <section id="sidebar">
+        <div class="sidebar_image_box">
+            <div class="menubar">
+                <button class="cancelBtn"><i class="fa fa-lg fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="sidebar_image_box--content">
+                <div class="user_photo">
+                    <img src="images\new.png" alt="">
+                </div>
+                <div>
+                    <h3>Rosy College</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="sidebar_space"></div>
+
+        <div class="sidebar_icon--panel">
+            <ul>
+                <li class="active_side_tab"><a href="dashboard.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a></li>
+                <li><a href="dashboard_student.html"> Students</a></li>
+                <li><a href="">Information Hub</a> </li>
+                <li><a href="">Finance</a> </li>
+                <li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Contenders</a></li>
+                <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+                <li><a href="">Logout</a> </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- main dashboard body -->
+    <section id="dashboard">
+        <!-- navigation bar -->
+        <nav>
+            <div class="hamburger">
+                <button class="open_sidebar"><i class="fa fa-lg fa-bars" aria-hidden="true"></i></button>
+            </div>
+            <div class="logo">
+                <img src="images\Logo.png" alt="">
+            </div>
+            <div class="admin_search">
+                <div>
+                    <button class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                <div class="search_input">
+                    <input type="text" placeholder="Search Name School NIN Reg Num">
+                </div>
+                
+            </div>
+            <div class="nav_icon">
+                <a href=""><i class="fa fa-xl fa-bell" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-xl fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <div class="schoolBtn">
+                <button>Rosy College <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+
+        <!-- student dashboard -->
+        <div class="dashboard dashboard__student">
+            <h1>Students <span class="dashboard_span"><button class="returnBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></button> Add Student</span></h1>
+            <div id="dashboard__student--container" class="dashboard__history dashboard__student--container">
+                <button class="dashboard__student--tab" id="addStudent_Btn">
+                    <!-- add student -->
+                    <h3>Add Student +</h3>
+                </button>
+                <button class="dashboard__student--tab">
+                    <!-- Debtor's list -->
+                    <h3>Debtor's list</h3>
+                </button>
+            </div>
+        </div>
+
+        <!-- addstudent form -->
+        <!-- STUDENT BIODATA -->
+        <div class="bio_data student_biodata">
+            <div class="form_stage--indicator">
+                <div class="indicator active_indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+            <div class="student info"></div>
+            <h2>Student Biodata</h2>
+            <div class="biodata--entry">
+                <div class="biodata--image">
+                    <div class="biodata--image_passport">
+                        <img src="" id="img" alt="">
+                    </div>
+                    <div class="biodata--image_Btn">
+                        <input type="file" id="profile_picture">
+                        <label for="profile_picture" class="uploadBtn">Upload Image</label>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- firstname -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">First Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="First Name">
+                            </div>
+                        </div>
+                        
+
+                        <!-- middlename -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Middle Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Middle Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- lastname -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Last Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Last Name">
+                            </div>
+                        </div>
+                        
+
+                        <!-- Gender -->
+                        <div class="form_layer--slide_input double_tab">
+                            <div class="double_tab_sect">
+                                <div>
+                                    <label for="">Gender</label>
+                                </div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">--Select Gender--</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="double_tab_sect">
+                                <div>
+                                    <label for="">Class</label>
+                                </div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">--Select Class--</option>
+                                        <option value="">Primary 1</option>
+                                        <option value="">Primary 2</option>
+                                        <option value="">Primary 3</option>
+                                        <option value="">Primary 4</option>
+                                        <option value="">Primary 5</option>
+                                        <option value="">Primary 6</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Date of Birth -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Date of Birth</label>
+                            </div>
+                            <div>
+                                <input type="date" name="" id="" placeholder="First Name">
+                            </div>
+                        </div>
+                        
+
+                        <!-- state of origin -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">State of Origin</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Nationality -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Nationality</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                        
+
+                        <!-- Address -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Address</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="saveBtn" id="saveBtn_1">Save & Proceed</button>
+        </div>
+
+        <!-- SPONSOR BIODATA -->
+        <div class="bio_data sponsor_biodata">
+            <div class="form_stage--indicator">
+                <div class="indicator "></div>
+                <div class="indicator active_indicator"></div>
+                <div class="indicator"></div>
+            </div>
+            <div class="student info"></div>
+            <br>
+            <h2>Sponsor Biodata</h2>
+            <form action="">
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- sponsor name -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Sponsor's Name</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Mr Doe Flemmingo">
+                            </div>
+                        </div>
+                        
+
+                        <!-- sponsor relationship -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Relationship</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Father">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- National ID -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">National Identity Number</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="0000000000">
+                            </div>
+                        </div>
+                        
+
+                        <!-- Gender -->
+                        <div class="form_layer--slide_input double_tab">
+                            <div class="double_tab_sect">
+                                <div>
+                                    <label for="">Gender</label>
+                                </div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">--Select Gender--</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Home address -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Home Address</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="5, Isaac John Street">
+                            </div>
+                        </div>
+                        
+
+                        <!-- state of origin -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">State of Origin</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Lagos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Phone number -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Phone Number</label>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="" placeholder="000-0000-0000">
+                            </div>
+                        </div>
+                        
+
+                        <!-- email Address -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Email Address</label>
+                            </div>
+                            <div>
+                                <input type="email" name="" id="" placeholder="xyz@yahoo.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="saveBtn" id="prevBtn_1">Previous</button>
+            <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
+        </div>
+
+        <!-- FINANCE FORM -->
+        <div class="bio_data finance">
+            <div class="form_stage--indicator">
+                <div class="indicator "></div>
+                <div class="indicator"></div>
+                <div class="indicator active_indicator"></div>
+            </div>
+            <h2>Finance</h2>
+            <br>
+            <form action="">
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- session -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Session</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="20/21">
+                            </div>
+                        </div>
+                        
+
+                        <!-- term -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Term</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" id="" placeholder="2nd Term">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Fees-->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Total Fee</label>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="" placeholder="200000">
+                            </div>
+                        </div>
+                        
+
+                        <!-- Debt Catergory -->
+                        <div class="form_layer--slide_input double_tab">
+                            <div class="double_tab_sect">
+                                <div>
+                                    <label for="">Debt Catergory</label>
+                                </div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">--Select Category--</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_layer">
+                    <div class="form_layer--slide">
+                        <!-- Outstanding Fee -->
+                        <div class="form_layer--slide_input">
+                            <div>
+                                <label for="">Outstanding Fee</label>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="" placeholder="50000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="saveBtn" id="prevBtn_2">Previous</button>
+            <button class="saveBtn" id="saveBtn_3">Save</button>
+        </div>
+    </section>
+    
+<script src="dashboard.js"></script>
+<script src="student.js"></script>
+</body>
+</html>
