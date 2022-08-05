@@ -31,11 +31,12 @@ p{
     font-weight:400;
 }
 /*  start of buttons  */
-.button-group button{
+.button-group button, .button-group a{
     border: 1px solid;
     border-radius:5px;
     padding:10px 20px;
     margin-right:6px;
+    text-decoration: none;
     }
     .button-group .sign_in{
         background-color: transparent;

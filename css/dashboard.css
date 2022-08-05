@@ -17,6 +17,7 @@ button{
     width: 386px;
     position: absolute;
     z-index: 1000;
+    margin-left: -430px;
     transition: 0.5s;
 }
 
@@ -66,32 +67,42 @@ button{
 }
 
 .sidebar_space{
-    height: 10%;
+    height: 50px;
     background: #0B9789;
 }
+.sidebar_icon--panel{
+    background: #FFFFFF;
+}
 
-.sidebar_icon--panel ul li{
+.side_tab{
     list-style: none;
     box-sizing: border-box;
     padding: 5% 0;
     width: 100%;
-    background: #fff;
+    background:#fff;
     border-radius: 4px;
-    color: #04322E;
 }
-.sidebar_icon--panel ul li a{
+.side_tab a{
     text-decoration: none;
+    background: transparent;
+    color: #04322E;
     padding: 5% 0;
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
     box-sizing: border-box;
-
+    margin-left: 10%;
 }
-.active_side_tab{
+.side_tab a i{
+    margin-right: 10%;
+}
+
+.active_side{
     background: #07655B;
+}
+
+.active_side a{
     color: #fff;
 }
 

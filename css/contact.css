@@ -45,7 +45,7 @@ form {
     font-family: inherit;
     height: 591px;
     border: 1px solid #097E72;
-    border-radius: 16px 16px 16px 16px;
+    border-radius: 16px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -132,6 +132,14 @@ form input:focus {
     line-height: 60px;
 }
 
+.desktop li a{
+    text-decoration: none;
+    color: #097E72;
+}
+.list li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 @media (max-width: 425px) {
     body {
