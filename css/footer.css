@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-
+*{
+    padding: 0;
+    margin: 0;
+}
 footer {
     width: 100%;
     height: 396px;
@@ -8,6 +11,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 #foot-list {
@@ -40,6 +45,7 @@ footer p {
     font-size: 16px;
     line-height: 24px;
     max-width: 291px;
+    padding: 20px 0;
 }
 
 footer ul {
@@ -48,6 +54,7 @@ footer ul {
     display: flex;
     width: 65%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .foot-column {
@@ -73,13 +80,13 @@ h6 {
 .list li {
     width: 100%;
     margin-top: 5px;
+    padding: 10px 0;
 }
 
 #copyright {
     background-color: #000;
     color: #fff;
     font-family: inherit;
-    height: 41px;
     display: flex;
     align-items: center;
 }
@@ -119,5 +126,11 @@ h6 {
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
+    }
+    .list li{
+        font-size: 14px;
+    }
+    footer ul{
+        padding: 15px 0;
     }
 }
