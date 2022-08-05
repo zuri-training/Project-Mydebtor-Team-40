@@ -62,10 +62,10 @@ p{
     /*  end of buttons  */
 /* end of general styling */
 
-/* start of navigation bar  */
 nav{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     padding:1% 5%;
     background-color:#fff;
 }
