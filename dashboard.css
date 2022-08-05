@@ -16,9 +16,10 @@ button{
 #sidebar{
     width: 386px;
     position: absolute;
-    margin-left: -430px;
     z-index: 1000;
+    transition: 0.5s;
 }
+
 
 .sidebar_image_box{
     width: 100%;
@@ -65,7 +66,7 @@ button{
 }
 
 .sidebar_space{
-    height: 5%;
+    height: 10%;
     background: #0B9789;
 }
 
@@ -206,7 +207,7 @@ nav{
     height: 250px;
     background: #CEEAE7;
     border: 2px solid #097E72;
-    border-radius: 4px;
+    border-radius: 16px;
     justify-content: center;
     align-items: center;
     color: #04322E;
@@ -244,12 +245,13 @@ nav{
     border: 1px solid #000000;
     box-shadow: 4px 4px 4px 2px #0B9789;
     margin-top: 10%;
+    border-radius: 16px;
 }
 .dashboard__view h2{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
     color: #04322E;
 }
