@@ -47,6 +47,8 @@ The goal of the project is to provide a user friendly platform that would enable
 ## Team Links
 - See the list of members [here]
 - Visit our GitHub [here](https://github.com/zuri-training/Project-Mydebtor-Team-4
+- Review DataBase Schema [here](https://drive.google.com/drive/u/0/folders/1IVnKx77_AQyTkRvFRjrFk0D_cRe1YkPJ)
+- Review Documentation [here](https://docs.google.com/document/d/1BIEX_rfV5J6cS7fNAdor8Qyl3_3fM1Cr0K7G7ot-jbI/edit)
 - Review our user research plan [here](https://docs.google.com/document/d/18CDMxCiKuRJf8VVVtRcXeqaNqN9PgqfwyIrLIUJydCo/edit?usp=sharing)
 - See our Figma Board [here](https://www.figma.com/file/j8hznqDDMZwr8FPzXvUv8g/Team-40-_My-Debtors(-Studebt)?node-id=374%3A6091)
 - See our Figjam Board [here](https://www.figma.com/file/PVziRLWRyTE7rJZVhdHPBV/Team-40-_-My-Debtors(Studebt)?node-id=0%3A1)
