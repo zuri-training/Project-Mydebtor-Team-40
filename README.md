@@ -1,54 +1,90 @@
 # Project-Mydebtor-Team-40
 
-## Project Title
-### STUDEBT
 
-## Project Description
+
+My_Debtors: Team 40
+
+
 A (web based application) website that helps schools in a locality view and keep track of student’s credit history. The platform helps the schools know if new students have outstanding bills in their previous school. 
 
 
-## Goal of The Project
+Goal of The Project: 
 The goal of the project is to provide a user friendly platform that would enable schools within a particular locality share the list of student owning them and prevent them from getting admitted to other schools within that locality without clearing their outstanding debt in previous schools.
 
-## Features
-### User: Unauthenticated.
-
-- Visit the platform to view basic information about it
-- View and Interact with the documentation
-- Register to view more details
-- No access to data
-
-### User: Authenticated
-- Full access to the platform
-- Verify details before full access to platform
-- Post new data about a debtor
-- Allow debtors to challenge - contend
-- Comment on post by others
-- Copy should be disabled
+Features
 
 
 
-## Design Tool
+Tools Used
+Design Tool
+
 Figma for design.
 
-## Collaboration tools
+Collaboration tools
+
 Figjam for whiteboarding and collaboration.
+
 GitHub for collaboration and developer.
 
-## Development Tool
-- HTML
-- CSS
+Languages
 
-## Languages
-- JavaScript.
-- Python.
+JavaScript.
+Python.
 
-## Framework
-- Django.
+Framework
 
-## Team Link
+Django.
+
+Team Link
 [Team Members List]
 
+Zion-El(Full stack)
+
+Bitee( Full stack)
+
+Olang Daniel( Full stack)
+
+Hussein Ibrahim( Full stack)
+
+Orejay( Full stack)
+
+Patience Sylvester( Full stack)
+
+Oniyade Faith( Full stack)
+
+Henry Ukwu( Full stack)
+
+Swaybob( Full stack)
+
+Surereal( Full stack)
+
+Zainab( Product Design)
+
+Jadesola(Product Design)
+
+Saint Oliverrr( Product Design)
+
+Jedi (Product Design)
+
+Lisa( Product Design)
+
+Simsola (Product Design)
+
+Vivian Ifunanya (Product Design)
+
+Pyreshy (Product Design)
+
+Adegboro Marvelous (Product Design)
+
+Kuna( Product Design)
+
+Olawale Esan(Product Design)
+
+KetosE( Product Design)
+
+Victor Ajadi( Product Design)
+
+princeedett( Product Design)
 
 ()
 [Git-Hub Link]
@@ -56,12 +92,17 @@ GitHub for collaboration and developer.
 ()
 [User research plan]
 
-(https://www.figma.com/file/j8hznqDDMZwr8FPzXvUv8g/Team-40-_My-Debtors(-Studebt)?node-id=374%3A6091)
-[Figma board]
+https://docs.google.com/document/d/18CDMxCiKuRJf8VVVtRcXeqaNqN9PgqfwyIrLIUJydCo/edit?usp=sharing
 
 ()
-[Figma Design Library]
+[Figma board]
 
+https://www.figma.com/file/j8hznqDDMZwr8FPzXvUv8g/Team-40-_My-Debtors(-Studebt)?node-id=374%3A6091
+
+()
+[Figjam board]
+
+https://www.figma.com/file/PVziRLWRyTE7rJZVhdHPBV/Team-40-_-My-Debtors(Studebt)?node-id=0%3A1
 ()
 [Read me file]
 
