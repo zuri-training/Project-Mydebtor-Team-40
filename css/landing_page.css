@@ -79,7 +79,7 @@ nav .image_logo img{
 }
 nav .nav_links a{
     padding-bottom:5px;
-    padding:10px;
+    padding:10px 25px;
     text-decoration:none;
     color:#202020;
     font-size:14px;
@@ -112,28 +112,45 @@ nav .nav_links .active{
     width:50%;
     display:flex;
     flex-direction:column;
+    display:fixed;
 
 }
 .first_box .right_side{
     width:50%;
 }
 .first_section .image_box{
+    width:100%;
     height:450px;
     display:flex;
     justify-content:space-around;
     flex-direction: row;
 }
 .first_section .right_side .first{
-    width:320px;
+    width:300px;
     height:100%;
-    margin-left:5%
+    object-position: center;
+    border-radius:10px;
+    object-fit: cover;
 }
+/* .first_section .right_side .first:hover{
+    width:150px;
+    object-fit: cover;
+    height:100%;
+    margin-left:3%;
+    border-radius:10px;
+    object-position: center;
+} */
+
 .first_section .right_side .second,
 .first_section .right_side .third{
-    width:120px;
+    width:150px;
+    object-fit: cover;
     height:100%;
-    margin-left:5%;
+    margin-left:3%;
+    border-radius:10px;
+    object-position: center;
 }
+
 
 /* end of hero section  */
 
@@ -178,8 +195,13 @@ nav .nav_links .active{
 
 }
 .third_section .image_box{
+    width:50%;
     display:grid;
     place-items: center;
+}
+.third_section .image_box img{
+    width:100%;
+    height:100%;
 }
 .third_section .content_box{
 padding:0 5%;
@@ -209,17 +231,27 @@ width:50%;
     margin-bottom: 5%;
 }
 .fourth_section .school_box{
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    row-gap:2.5rem;
+    display: flex;
+    overflow: auto hidden;
+    white-space: nowrap;
 }
+.fourth_section .school_box::-webkit-scrollbar {
+    display: none;
+  }
 .fourth_section .school_box .image_box{
-    display:flex;
-    margin:5%;
+   display: grid;
+   grid-template-columns: auto auto;
+    margin:3%;
+    width:200px;
+    overflow-wrap: break-word;
+}
+.fourth_section .image_box .text{
+    width:50%;
 }
 .fourth_section .school_box p{
     font-size:10px;
     margin-left:5%;
+
 }
 /* end of trusted by 100 schools  */
 
@@ -230,9 +262,6 @@ width:50%;
     color:white;
     display: grid;
     place-items: center;
-}
-.fifth_section .icon_box{
-    margin:2%
 }
 .fifth_section .icon_box img{
     border-bottom: 1px white solid;
@@ -257,3 +286,187 @@ width:50%;
     opacity: 0.5;
 }
 /* end of your information safe and secure  */
+
+/* what happy clients say about us  */
+.sixth_section{
+    padding:5%;
+}
+.hero-2 {
+    padding:5% 0;
+    background-color: rgba(224, 209, 209, 0.9 );
+    backdrop-filter: blur(200px);
+}
+.sixth_section .title{
+    text-align:center;
+    margin-bottom:5%;   
+}
+.sixth_section .testimonial{
+    height:200px;
+    background: #CEEAE7;
+    margin:0 5%;
+    padding: 2%;
+    border-radius:6px;
+    display:flex;
+    align-items: center;
+}
+.testimonial .image_box, 
+.testimonial .principal_box,
+.testimonial .content_box{
+    margin-right:5%;
+}
+.testimonial .content_box p{
+    font-size:16px;
+}
+.mySlides {
+    display: none;
+    width:40%;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    width:100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height:50px;
+  background: #CEEAE7;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  user-select: none;
+  border-radius:50%;
+  display: grid;
+  place-items:center;
+  margin: 0 5%;   
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+.prev{
+    left:0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+.sixth_section .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* what happy clients say about us  */
+
+/* frequently asked questions  */
+.seventh_section{
+    margin:5% 0;
+    display:grid;
+    place-items:center;
+}
+.seventh_section .questions{
+    margin: 2% auto;
+    width:70%;
+}
+.seventh_section .dropdown{
+    border: 1px solid #E5E7EB;
+}
+.seventh_section .question {
+    display: flex;
+    justify-content: space-between;
+    padding:2%;
+    background-color: #E5E7EB;
+}
+.seventh_section .question i{
+    cursor: pointer;
+}
+.seventh_section .question .fa-angle-up{
+    display: none;
+}
+.seventh_section .answer{
+    display:none;
+    padding:2%;
+}
+/* frequently asked questions  */
+
+/* join 1000 subscribers  */
+.eight_section {
+display: grid;
+place-items:center;
+border: 1px solid #8F8F8F
+}
+.eight_section .grid{
+    border-radius: 10px;
+    padding:5% 25%;
+    border: 1px solid #8F8F8F;
+}
+.eight_section .title,
+.eight_section .title h2
+{
+    margin-bottom:3%;
+}
+.eight_section .subscribe_box{
+    display: flex;
+}
+.eight_section input{
+padding: 12px;
+margin-right:5%;
+width: 240px;
+height: 44px;
+
+background: #FFFFFF;
+/* Neutral/4 */
+
+border: 1px solid #6A6A6A;
+border-radius: 4px;
+}
+.eight_section input::placeholder{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.3);
+}
+.eight_section input:focus{
+    outline: none;
+}
+/* join 1000 subscribers  */
