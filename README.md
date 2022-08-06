@@ -86,24 +86,16 @@ Victor Ajadi( Product Design)
 
 princeedett( Product Design)
 
-()
-[Git-Hub Link]
+[Git-Hub Link](https://github.com/zuri-training/Project-Mydebtor-Team-40/)
 
-()
-[User research plan]
 
-https://docs.google.com/document/d/18CDMxCiKuRJf8VVVtRcXeqaNqN9PgqfwyIrLIUJydCo/edit?usp=sharing
+[User research plan](https://docs.google.com/document/d/18CDMxCiKuRJf8VVVtRcXeqaNqN9PgqfwyIrLIUJydCo/edit?usp=sharing)
 
-()
-[Figma board]
 
-https://www.figma.com/file/j8hznqDDMZwr8FPzXvUv8g/Team-40-_My-Debtors(-Studebt)?node-id=374%3A6091
+[Figma board](https://www.figma.com/file/j8hznqDDMZwr8FPzXvUv8g/Team-40-_My-Debtors(-Studebt)?node-id=374%3A6091)
 
-()
-[Figjam board]
+[Figjam board](https://www.figma.com/file/PVziRLWRyTE7rJZVhdHPBV/Team-40-_-My-Debtors(Studebt)?node-id=0%3A1)
 
-https://www.figma.com/file/PVziRLWRyTE7rJZVhdHPBV/Team-40-_-My-Debtors(Studebt)?node-id=0%3A1
-()
 [Read me file]
 
 ()
