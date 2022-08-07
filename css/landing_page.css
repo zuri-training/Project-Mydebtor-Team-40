@@ -238,21 +238,7 @@ width:50%;
 .fourth_section .school_box::-webkit-scrollbar {
     display: none;
   }
-.fourth_section .school_box .image_box{
-   display: grid;
-   grid-template-columns: auto auto;
-    margin:3%;
-    width:200px;
-    overflow-wrap: break-word;
-}
-.fourth_section .image_box .text{
-    width:50%;
-}
-.fourth_section .school_box p{
-    font-size:10px;
-    margin-left:5%;
 
-}
 /* end of trusted by 100 schools  */
 
 /* start of your information safe and secure  */
