@@ -1,0 +1,125 @@
+@media (max-width:1024px){
+    .sign_up_Form{
+        padding: 0 7%;
+    }    
+    form{
+        gap: 10px;
+    }
+    .max_input, .min_input{
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .userSelect-Btn{
+        margin-bottom: 16px;
+    }
+    .userSelect-Btn a{
+        font-size: 14px;
+    }
+    .userSelect-Btn hr{
+        margin-top: 4px;
+    }
+}
+
+@media (max-width:768px){
+    .sign_up_Desc{
+        padding: 5% 5%;
+    }
+    .logo img{
+        height: 40px;
+        width: 150px;
+    }
+    .pageTitle{
+        margin-top: 80px;
+    }
+    .pageTitle h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .userSelect-Btn{
+        margin-bottom: 16px;
+    }
+    .userSelect-Btn a{
+        font-size: 14px;
+    }
+    .userSelect-Btn hr{
+        margin-top: 4px;
+    }
+    
+    form{
+        gap: 5px;
+    }
+    .sign_up_Form{
+        padding: 0 50px;
+    }
+    .max_input, .min_input{
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .password_note{
+        font-size: 7px;
+    }
+    .submitBtn{
+        padding: 7px 0;
+    }
+    .caution_text p{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    footer{
+        height: 50px;
+        font-size: 8px;
+    }
+}
+@media (min-width:320px) and (max-width:425px){
+    body{
+        background: #fff;
+    }
+    main{
+        display: block;
+        height: 100%;
+    }
+    .sign_up_Desc, .sign_up_Form{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .sectA--TAB{
+        margin-top: 15px;
+    }
+    .logo img{
+        margin: auto;
+    }
+    .pageTitle{
+        display: none;
+    }
+    .userSelect-Btn hr{
+        height: 4px;
+    }
+    form{
+        gap: 15px;
+    }
+    .input_area{
+        flex-direction: column;
+    }
+    .sectA{
+        width: 100%;
+    }
+
+    .max_input, .min_input{
+        padding: 15px;
+    }
+    .caution_text{
+        text-align: center;
+        font-size: 14px;
+    }
+    footer{
+        display: none;
+    }
+}
