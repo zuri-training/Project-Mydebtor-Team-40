@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./about.css" />
-    <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <title>About Us</title>
   </head>
   <body>
-    <header id="header">
-      <div id="logo-div"><img src="./images/Logo.png" alt="Logo" /></div>
-      <ul class="desktop">
-        <li>Home</li>
-        <li>How it Works</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-      </ul>
-      <div class="desktop">
-        <input type="submit" value="Log in" id="log-in" class="auth-btn" />
-        <input type="submit" value="Register" id="register" class="auth-btn" />
+    <nav>
+      <div class="image_logo">
+          <img src="images/landing_logo.png" alt="">
       </div>
-    </header>
+      <div class="nav_links" id="nav_links">
+          <a href="landing_page.html" class="link">Home</a>
+          <a href="#" class="link">How It Works</a>
+          <a href="about.html" class="link active">About Us</a>
+          <a href="contact.html" class="link">Contact Us</a>
+      </div>
+      <div class="nav_buttons button-group">
+          <a class="sign_in" href="admin_sign_in.html">Log In</a>
+          <a class="register" href="admin_sign_up.html">Register</a>
+      </div>
+    </nav>
+
     <section id="section">
         <div id="banner">
             <p>Protecting the interests of schools by ensuring a debt-free ecosystem</p>
@@ -152,17 +157,30 @@
             <div class="foot-column">
               <h6>Company</h6>
               <ul class="list">
-                <li>About Us</li>
-                <li>What We Do</li>
-                <li>Privacy Policy</li>
-                <li>Advertise</li>
+                  <a href="about.html">
+                      <li>About Us</li>
+                  </a>
+                  <a href="#">
+                      <li>What We Do</li>
+                  </a>
+                  <a href="privacy.html">
+                      <li>Privacy Policy</li>
+                  </a> 
+                  <a href="#">
+                     <li>Advertise</li> 
+                  </a> 
+                
               </ul>
             </div>
             <div class="foot-column">
               <h6>Help</h6>
               <ul class="list">
-                <li>Contact Us</li>
-                <li>Advertise</li>
+                  <a href="contact.html">
+                    <li>Contact Us</li>  
+                  </a>
+                  <a href="">
+                      <li>Advertise</li>
+                  </a>                          
               </ul>
             </div>
           </div>
@@ -170,5 +188,7 @@
       </div>
       <div id="copyright"><p>copyright @ StuDebt</p></div>
     </footer>
+
+    <script src="javascript/landing_page.js"></script>
   </body>
 </html>
