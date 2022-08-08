@@ -234,11 +234,36 @@ width:50%;
     display: flex;
     overflow: auto hidden;
     white-space: nowrap;
+    flex-direction: column;
 }
 .fourth_section .school_box::-webkit-scrollbar {
     display: none;
   }
-
+.fourth_section .row{
+    display:flex;
+    margin:2%;
+}
+.fourth_section .school{
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items:center;
+    width: 200px;
+    margin-right:2%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.fourth_section .row .image_box img{
+    width:42px;
+    height:42px;
+    margin-right:5px;
+}
+.fourth_section .school .title_box{
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 10px;
+}
 /* end of trusted by 100 schools  */
 
 /* start of your information safe and secure  */
