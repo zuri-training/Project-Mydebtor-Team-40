@@ -8,9 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background: #097E72;
+    background-image: url(images/Sign\ Up\ User.png);
 }
+
 main{
     display: flex;
     width: 100%;
@@ -54,7 +56,7 @@ main{
 /* the form and its content */
 
 .sign_up_Form{
-    background: #fff;
+   
     width: 53%;
     display: flex;
     align-items: center;
