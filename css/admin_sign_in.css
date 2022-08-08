@@ -4,7 +4,7 @@
     --manrope_font: 'Manrope', sans-serif;
 }
 body{
-background-color: #34A89D;
+    background-color:  #EFEBEB;;
 }
 *{
     margin: 0;
@@ -20,34 +20,30 @@ main{
 /* general styling */
 
 /* the left side banner and its content */
+.logo{
+    margin: 1% 5%;
+}
 .sign_up_Desc{
     width: 50%;
-    color: #fff;
-    padding: 5% 8%;
+    color: #202020;
+    padding:1% 5% 0% 5%;
+}
+.sign_up_Desc .image_box{
+    display:grid;
+    place-items: center;
 }
 .logo img{
-    width: 220px;
+    width: 150px;
 }
-.pageTitle{
-    margin-top: 120px;
-}
-.pageTitle h1{
+
+.sign_up_Desc h1{
     font-family: var(--manrope_font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 80px;
-    letter-spacing: 1.2px;
-    color: #FFFFFF;
-}
-.pageTitle p{
-    font-family: var(--manrope_font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-size: 42px;
+    font-weight: 800;
     line-height: 60px;
-    color: #FFFFFF;
+    letter-spacing: 0em;
 }
+
 /* the left side banner and its content */
 
 
@@ -60,8 +56,6 @@ main{
     flex-direction: column;
     justify-content: center; 
     padding: 0 130px;
-    background-color: #fff;
-    height:100vh;
 
 }
 
@@ -72,32 +66,17 @@ main{
     justify-content: center;
     margin-bottom: 20px;
     text-align: center;
+    
 }
-.userSelect-Btn a{
-    font-family: var(--manrope_font);
-    font-size: 20px;
-    line-height: 30px;
-    color: #D2D2D2;
-    width: 100%;
-    text-decoration: none;
+.userSelect-Btn h6{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #6A6A6A;
+
 }
-.AdminBtn, .PersonalBtn{
-    width: 49%;
-}
-.userSelect-Btn hr{
-    width: 100;
-    border: none;
-    height: 6px;
-    background: #D2D2D2;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-.active a{
-    color: #34A89D;
-}
-.active hr{
-    background: #34A89D;
-}
+
 /* BUTTON FORM  */
 
 /* MAIN FORM */
@@ -207,8 +186,8 @@ text-align: center;
 footer{
     background-color: inherit;
     width:50%;
-    position:fixed;
     bottom:2%;
+    position:fixed;
     display:flex;
     justify-content: space-around;
     font-family: var(--manrope_font);
@@ -216,7 +195,6 @@ footer{
     font-weight: 400;
     font-size: 12px;
     line-height: 19px;
-    color: #fff;
 
 }
 /* footer  */
@@ -236,6 +214,9 @@ footer{
         height:100%;
          width:100%;
 
+    }
+    .sign_up_Desc .image_box{
+        display:none;
     }
     .sign_up_Form   {
         width:100%;
