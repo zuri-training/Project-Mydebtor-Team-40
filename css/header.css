@@ -27,10 +27,13 @@ header ul {
     justify-content: space-between;
     align-items: center;
 }
-
+.desktop a{
+    text-decoration: none;
+}
 .auth-btn {
     width: 104px;
     height: 44px;
+    padding: 10px;
     border-radius: 6px;
     border: none;
     background-color: #097E72;

@@ -1,0 +1,208 @@
+/* start of general styling */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+/* body{
+background-color: #34A89D;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--manrope_font);
+}
+h1{
+    font-size:50px;
+    font-weight:800;
+}
+h2{
+    font-size:48px;
+    font-weight:600;
+    text-transform: capitalize;
+}
+h3{
+    font-size:40px;
+    font-weight:600;
+    text-transform: capitalize;
+}
+h4{
+    font-size:28px;
+    font-weight:600;
+    text-transform: capitalize;
+}
+p{
+    font-size:16px;
+    font-weight:400;
+}
+/*  start of buttons  */
+.button-group button, .button-group a{
+    border: 1px solid;
+    border-radius:5px;
+    padding:10px 20px;
+    margin-right:6px;
+    text-decoration: none;
+    }
+    .button-group .sign_in{
+        background-color: transparent;
+        color:#202020;
+        border-color:#202020;
+        display: inline-block;
+           
+    }
+    .button-group .sign_in:hover{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register:hover{
+        color: #097E72;
+        background-color:transparent;
+
+    }
+    /*  end of buttons  */
+/* end of general styling */
+
+/* start of navigation bar  */
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1% 5%;
+    background-color:#fff;
+}
+nav .image_logo img{
+    width:150px;
+    color:#34A89D;
+}
+
+/* start of navigation links  */
+.nav-links{
+    display: flex;
+}
+nav .nav_links a{
+    padding-bottom:5px;
+    padding:10px;
+    text-decoration:none;
+    color:#202020;
+    font-size:14px;
+}
+nav .nav_links a:hover,
+nav .nav_links .active{
+    border-bottom:3px solid #34A89D;
+    color:#34A89D;
+}
+/* end of navigation links  */
+
+/* end of navigation bar  */
+
+.hero-section{
+    min-height: 400px;
+    background-color: #097E72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_heading{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.hero_date{
+    color: #D2D2D2;
+    text-align: center;
+}
+section.all_contents{
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.content_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.table_item{
+    width: 40%;
+}
+.contents{
+width: 50%;
+}
+.table{
+    border: 1px solid #000;
+    padding:30px 40px;
+}
+.table_heading{
+    color: #097E72;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.table_link{
+    text-decoration: none;
+}
+.table_link li{
+    padding: 10px 0;
+}
+.content_heading{
+    color: #097E72;
+}
+.contents p{
+    color: #000;
+    line-height: 1.8;
+    text-align: justify;
+    padding-bottom: 10px;
+
+}
+.divider{
+    height: 1px;
+    width: 80%;
+    background-color: #D2D2D2;
+    margin: 0 auto;
+}
+#introduction h3, #collection_data h3, #Information h3, #rights h3, #security h3 {
+    color: #097E72;
+}
+#introduction p, #collection_data p, #Information p, #rights p, #rights li, #security p{
+    line-height: 1.8;
+}
+#introduction > p{
+    padding-bottom: 10px;
+}
+.indent{
+    text-indent: 15px;
+}
+#rights ol{
+    margin-left: 18px!important;
+}
+@media (max-width: 425px){
+    .content_items{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contents,.table_item{
+        width: 100%;
+    }
+    .contents{
+        margin-top: 15px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+}
