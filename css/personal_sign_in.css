@@ -3,8 +3,9 @@
 :root{
     --manrope_font: 'Manrope', sans-serif;
 }
+
 body{
-background-color: #34A89D;
+    background-color: #34A89D;
 }
 *{
     margin: 0;
