@@ -1,6 +1,6 @@
 // pulling and retuning up the student form at the click of add student button
 const add_student = document.querySelector('#addStudent_Btn');
-const initial_display = document.querySelector('#dashboard__student--container');
+const initial_display = document.querySelector('.dashboard__student');
 const student_biodata_display = document.querySelector('.student_biodata');
 const sponsor_biodata_display = document.querySelector('.sponsor_biodata');
 const finance_display = document.querySelector('.finance');

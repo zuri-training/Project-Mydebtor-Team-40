@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+footer {
+    width: 100%;
+    height: 396px;
+ background: #07655B;
+}
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +19,7 @@ footer {
     color: #fff;
     margin: 0;
     padding: 0;
+
 }
 
 #foot-list {
@@ -46,6 +53,7 @@ footer p {
     line-height: 24px;
     max-width: 291px;
     padding: 20px 0;
+
 }
 
 footer ul {
@@ -54,7 +62,9 @@ footer ul {
     display: flex;
     width: 65%;
     justify-content: space-between;
+
     align-items: center;
+
 }
 
 .foot-column {
@@ -77,19 +87,24 @@ h6 {
     padding: 0;
 }
 
+.list li {
+    width: 100%;
+    margin-top: 5px;
+
 .list a {
     width: 100%;
     margin-top: 5px;
     padding: 10px 0;
     color: #fff;
     text-decoration: none;
-    
+
 }
 
 #copyright {
     background-color: #000;
     color: #fff;
     font-family: inherit;
+    height: 41px;
     display: flex;
     align-items: center;
 }
@@ -131,9 +146,15 @@ h6 {
         line-height: 20px;
     }
     .list li{
+        text-decoration: none;
+
+    }
+    .list li{
         font-size: 14px;
+        list-style: none;
     }
     footer ul{
         padding: 15px 0;
     }
+
 }

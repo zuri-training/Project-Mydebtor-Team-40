@@ -1,0 +1,17 @@
+.main_block{
+    margin:5%;
+}
+.main_block .content{
+    display: flex;
+}
+.main_block .title{
+    align-items: center;
+    margin-bottom: 2%;
+}
+.main_block .content_box{
+    width:50%;
+    margin:2%;
+}
+.main_block .detail{
+    margin:10% 0;
+}
