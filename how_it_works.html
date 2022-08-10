@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/landing_page.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/how_it_works.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Studebt-how_it_works</title>
 </head>
 <body>
         <!-- navigation bar  -->
-        <nav>
+        <nav id="myTopnav">
             <div class="image_logo">
                 <img src="images/landing_logo.png" alt="">
             </div>
@@ -25,6 +28,9 @@
                 <button class="sign_in">Sign In</button>
                 <button class="register">Register</button>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
         <!-- navigation bar  -->
         <!-- main block  -->
@@ -44,7 +50,7 @@
                     </div>
                     <div class="detail">
                         <h4>3. Set Up Dashboard</h4>
-                        Get started with setting up your dashboard by filling in all the necessary information in all the right places. 
+                       <p> Get started with setting up your dashboard by filling in all the necessary information in all the right places. </p>
                     </div>
                     <div class="detail">
                         <h4>4. List and Find Debtors</h4>
@@ -155,5 +161,6 @@
       </footer>
     <!-- footer  -->
 <script src="javascript/landing_page.js"></script>
+<script src="javascript/navigation.js"></script>
 </body>
 </html>
