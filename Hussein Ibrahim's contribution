@@ -1,0 +1,24 @@
+AUTHENTICATION
+Using Django and DjangoRestFrameWork API package, i created a core app for our project, and designed the a CustomUser class from Django's AbstractUser. 
+The core app is meant to handle all authentication modules.
+I installed Djoser package into the application's installed apps in settings.py file of the Project directory, and configured its settings to meet the authentication 
+requirements of our web Application. 
+With the Djoser package, i configured the, Register, Login, Logout, RestPassword, Activate account and Google Authentication.
+
+
+https://github.com/zuri-training/Team40-MyDebtor/tree/main/core
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/NewProject40/settings.py
+
+MYDEBTORS 
+I created a 'mydebtors' app for our project, the app contains serializers.py to handle all the serializations of data,
+and signals.py to send emails to guardians of debtors once their child/ward have been added as a debtor on our platform.
+I designed the models.py to be able to meet the requirements of the application.  
+created permission, validators , pagination modules to help secure our API
+
+https://github.com/zuri-training/Team40-MyDebtor/tree/main/mydebtors
+
+INFO_HUB
+I assisted my team mates in desgning the views, models, and serializers.py files of the app that acts as the information hub of our project, where school admins can make
+post and comments.
+
+https://github.com/zuri-training/Team40-MyDebtor/tree/main/info_hub
