@@ -1,0 +1,96 @@
+/*  start of buttons  */
+.button-group button, .button-group a{
+    border: 1px solid;
+    border-radius:5px;
+    padding:10px 20px;
+    margin-right:6px;
+    text-decoration: none;
+    }
+    .button-group .sign_in{
+        background-color: transparent;
+        color:#202020;
+        border-color:#202020
+        
+    }
+    .button-group .sign_in:hover{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register{
+        background-color: #097E72;
+        color:#fff;
+        border-color:#097E72;
+    }
+    .button-group .register:hover{
+        color: #097E72;
+        background-color:transparent;
+
+    }
+    /*  end of buttons  */
+/* end of general styling */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1% 5%;
+    background-color:#fff;
+}
+nav .image_logo img{
+    width:150px;
+    color:#34A89D;
+}
+
+/* start of navigation links  */
+.nav-links{
+    display: flex;
+}
+nav .nav_links a{
+    padding-bottom:5px;
+    padding:10px 25px;
+    text-decoration:none;
+    color:#202020;
+    font-size:14px;
+}
+nav .nav_links a:hover,
+nav .nav_links .active{
+    border-bottom:3px solid #34A89D;
+    color:#34A89D;
+}
+.nav_links .icon {
+    display: block;
+  }
+/* end of navigation links  */
+
+/* responsive design  */
+@media screen and (max-width: 600px) {
+    .nav_buttons {
+        display:none;
+    }
+    .nav_links {display: none;}
+      .icon {
+      display: block;
+      color:#202020;
+      font-size: 23px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav_links.responsive {
+        position: relative;
+        display:block;
+        flex-direction: column;
+    }
+    nav .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav_links.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
