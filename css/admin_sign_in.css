@@ -23,6 +23,10 @@ main{
 .logo{
     margin: 1% 5%;
 }
+.logo .text,
+.sign_up_Form .text{
+    display: none;
+}
 .hero{
     width: 50%;
     color: #202020;
@@ -210,24 +214,35 @@ footer{
 /* For mobile phones: */
 @media only screen and (max-width: 490px) {
     body{
-        background-color: #34A89D !important;
-        height:100vh;
+        background: linear-gradient( 180deg, #34A89D 50% , white 50%);
+        height: 100vh;
     }
     main{
         display:block;
     }
-    .sign_up_Desc{
-        height:100%;
-         width:100%;
+    .logo .text,
+    .sign_up_Form .text{
+        display: block;
+        padding:10%;
+    }
+    .logo .text h1{
+        color:white;
+    }
+    .logo{
+        height:30%;
 
     }
-    .sign_up_Desc .image_box{
-        display:none;
+    .hero{
+        background:inherit;
+    }
+    .sign_up_Desc,
+    .sign_up_Form .userSelect-Btn{
+         display:none;
     }
     .sign_up_Form   {
-        width:100%;
-        position:absolute;
-        bottom:0;
+        background-color: #fff;
+        width:100%; 
+        height: 70%;
         padding:20% 2%;
         border-top-left-radius: 50px;
         height:auto;
@@ -249,8 +264,12 @@ footer{
         width:100%;
     }
     .logo img{
-        margin-top:20%;
+        text-align:center ;
+        margin:25%;
         width:150px;
+    }
+    .userForm .input_area{
+        margin:2% 0;
     }
   }
   /* For mobile phones: */
