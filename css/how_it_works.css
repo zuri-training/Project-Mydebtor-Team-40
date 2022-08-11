@@ -15,3 +15,48 @@
 .main_block .detail{
     margin:10% 0;
 }
+@media only screen and (max-width: 490px) {
+
+    /* fonts  */
+    p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    }
+    h4,h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    }
+    /* fonts  */
+    .main_block{
+        margin:3%;
+        width:100vw;
+    }
+    .main_block .content{
+        display:flex;
+        flex-direction: column-reverse;
+        margin:5%;
+    }
+    .main_block .content_box,
+    .main_block .image_box{
+        width:90%;
+    }
+    .main_block .image_box{
+        text-align: center;
+    }
+    .main_block .image_box img{
+
+        width: 250px;
+        height: 228.36px;
+    }
+    .main_block .detail{
+        padding:5% 0%;
+        width:100%;
+        box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+    }
+    .main_block .title{
+        text-align: center;
+    }
+
+}

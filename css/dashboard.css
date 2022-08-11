@@ -5,118 +5,28 @@
 
 
 body{
-    background-color: #fff;
-    padding: 0 3%;
+    background: #D2D2D2;
 }
 button{
     cursor: pointer;
 }
 
-/* sidebar */
-#sidebar{
-    width: 386px;
-    position: absolute;
-    z-index: 1000;
-    margin-left: -430px;
-    transition: 0.5s;
-}
 
-
-.sidebar_image_box{
-    width: 100%;
-    height: 231px;
-    background: #07655B;
-    border: 1px solid #D9D9D9;
-}
-
-.menubar {
-    margin-top: 7%;
-    margin-left: 90%;
-    position: relative;
-}
-.menubar button{
-    color: #fff;
-    background: transparent;
-    border: none;
-    position: absolute;
-}
-
-.sidebar_image_box--content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 17%;
-}
-.sidebar_image_box--content h3{
-    font-family: var(--manrope_font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    color: #FFFFFF;
-}
-
-.user_photo img{
-    box-sizing: border-box;
-    width: 133px;
-    height: 146.9px;
-    background: url(.jpg), #FFFFFF;
-    border: 3px solid #FFFFFF;
-    border-radius: 100px;
-    margin-right: 20px;
-}
-
-.sidebar_space{
-    height: 50px;
-    background: #0B9789;
-}
-.sidebar_icon--panel{
-    background: #FFFFFF;
-}
-
-.side_tab{
-    list-style: none;
-    box-sizing: border-box;
-    padding: 5% 0;
-    width: 100%;
-    background:#fff;
-    border-radius: 4px;
-}
-.side_tab a{
-    text-decoration: none;
-    background: transparent;
-    color: #04322E;
-    padding: 5% 0;
-    font-family: var(--manrope_font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    box-sizing: border-box;
-    margin-left: 10%;
-}
-.side_tab a i{
-    margin-right: 10%;
-}
-
-.active_side{
-    background: #07655B;
-}
-
-.active_side a{
-    color: #fff;
-}
 
 
 /* NAVIGATION BAR */
 nav{
-    height: 68px;
+    height: 85px;
     width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
     box-sizing: border-box;
-    background: #097E72;
-    border: 1px solid #097E72;
+    background: #FFFFFF;
+    border-bottom: 1px solid #D2D2D2;
+}
+nav h3{
+    font-family: var(--manrope_font);
 }
 
 .hamburger{
@@ -136,12 +46,18 @@ nav{
 
 
 .admin_search{
-    width: 525px;
+    padding: 16px 0px 16px 8px;
+    gap: 8px;
+    width: 40.9%;
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    background: #fff;
-    padding: 7px 5px;
-    margin-right: 3%;
+    margin: 0 5%;
 }
+
 .searchBtn{
     border: none;
     background: transparent;
@@ -160,68 +76,139 @@ nav{
 }
 
 .logo{
+    width: 10%;
     margin-left: 2%;
     margin-right: 2%;
 }
 .logo img{
-    width: 135px;
-    height: 38px;
+    width: 100%;
+    height: 32px;
 }
 .nav_icon{
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    width: 5%;
     margin-right: 8%;
 }
 .nav_icon a i{
-    color: #fff;
+    color: #202020;
 }
 
+.schoolBtn{
+    display: flex;
+    width: 180px;
+    height: 56px;
+}
+.schoolBtn img{
+    width: 56px;
+    height: 56px;
+}
 .schoolBtn button{
-    padding: 2px 16px;
-    width: 176.39px;
+    border: none;
+    padding: 2px ;
+    width: 200px;
     height: 54px;
-    background: #0B9789;
-    border: 4px solid #064C45;
-    border-radius: 4px;
-    font-family: 'Manrope';
+    background: #fff;
+    color: #6A6A6A;
+    font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
 }
 
-.dashboard h1{
+#dashboard{
+    /* padding-right: 3%; */
+    display: flex;
+    /* gap: 4%; */
+}
+/* sidebar */
+#sidebar{
+    width: 25%;
+    height: 939px;
+    background: #FFFFFF;
+    border-right: 1px solid #D2D2D2;
+}
+
+.sidebar_icon--panel{
+    width: 82%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.side_tab{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 16px 8px;
+    width: 100%;
+    background:#fff;
+    border-radius: 4px;
+}
+.side_tab a{
+    text-decoration: none;
+    color: #454545;
+    padding: 5% 0;
     font-family: var(--manrope_font);
     font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 66px;
-    color: #04322E;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.side_tab a i{
+    margin-right: 10%;
+}
+
+.active_side{
+    border-left: 3px solid #04322E;
+}
+
+/* .active_side a{
+    color: #fff;
+} */
+.dashboard{
+    width: 80%;
+    margin: 3% 4%;
+}
+.dashboard_section{
+    display: flex;
+}
+.dashboard__history{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 47%;
+}
+
+.dashboard__history h1, .dashboard_message h1, .dashboard__view--title h2{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #202020;
     margin-top: 2%;
     letter-spacing: 2px;
 }
 
-.dashboard__history{
+.history_container{
     display: flex;
-    gap: 20px;
-    margin-top: 5%;
-    margin-left: 9%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-
 .dashboard__history--tab{
     display: flex;
+    border: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     box-sizing: border-box;
-    width: 250px;
-    height: 250px;
-    background: #CEEAE7;
-    border: 2px solid #097E72;
-    border-radius: 16px;
+    width: 169px;
+    height: 169px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
-    color: #04322E;
+    color: #202020;
 }
 
 .dashboard__history--tab:hover{
@@ -235,56 +222,93 @@ nav{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 33px;
     flex: none;
-    order: 1;
 }
 .dashboard__history--tab p{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
-    order: 2;
     flex-grow: 0;
 }
 
-.dashboard__view--title {
-    padding: 4px 8px;
-    background: #CEEAE7;
-    border: 1px solid #000000;
-    box-shadow: 4px 4px 4px 2px #0B9789;
-    margin-top: 10%;
-    border-radius: 16px;
+.message_container{
+    height: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 2% 5%;
 }
-.dashboard__view h2{
+
+.message{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.message_photo img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.message_content{
+    width: 100%;
+    height: 40px;
+    overflow-y: hidden;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.message_content--header{
+
+}
+
+.sender_name{
     font-family: var(--manrope_font);
     font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 44px;
-    color: #04322E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202020;
 }
+.send_time{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    float: right;
+}
+
+.message_content p{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6A6A6A;
+}
+
+.dashboard__view{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 5%;
+}
+
 
 .dashboard__view--table{
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 8px;
-    gap: 24px;
-    background: #CEEAE7;
-    border-radius: 16px;
-    margin-top: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 2% 5%;
 }
 
-.dashboard__view--table h3{
-    font-family: var(--manrope_font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    color: #000000;
-}
