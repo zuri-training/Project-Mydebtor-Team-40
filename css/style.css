@@ -2,59 +2,68 @@
 :root{
     --manrope_font: 'Manrope', sans-serif;
 }
-
+body{
+    background-color:  #EFEBEB;;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background: #097E72;
+    font-family: var(--manrope_font);
 }
 main{
     display: flex;
     width: 100%;
-    height: 100vh;
+    
 }
 
 /* the left side banner and its content */
-.sign_up_Desc{
-    width: 47%;
-    color: #fff;
-    padding: 5% 8%;
+.logo{
+    margin: 1% 5%;
 }
+
 .logo img{
-    height: 50px;
-    width: 220px;
+    width: 150px;
 }
-.pageTitle{
-    width: 376px;
-    height: 228px;
-    margin-top: 120px;
+.hero{
+    width: 50%;
+    color: #202020;
+    padding:0%;
+    background: url('../images/green\ circle.png')  center  no-repeat,
+    url('../images/red\ circle.png') top 100px right 200px no-repeat;
+    
 }
-.pageTitle h1{
+.sign_up_Desc .text_box{
+    margin:2% 10% 2% 10%;
+}
+.sign_up_Desc{
+    backdrop-filter: blur(60px);
+}
+.sign_up_Desc .image_box{
+    display:grid;
+    place-items: center;
+}
+
+.sign_up_Desc h1{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 80px;
     letter-spacing: 1.2px;
-    color: #FFFFFF;
+
 }
-.pageTitle p{
-    font-family: var(--manrope_font);
+.sign_up_Desc p{
+
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 60px;
-    color: #FFFFFF;
+
 }
 
 
 /* the form and its content */
 
 .sign_up_Form{
-    background: #fff;
     width: 53%;
     display: flex;
     align-items: center;
@@ -63,39 +72,6 @@ main{
     padding: 0 130px;
 }
 
-/* FOR THE BUTTON ON THE FORM */
-.userSelect-Btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.userSelect-Btn a{
-    font-family: var(--manrope_font);
-    font-size: 20px;
-    line-height: 30px;
-    color: #D2D2D2;
-    width: 100%;
-    text-decoration: none;
-}
-.AdminBtn, .PersonalBtn{
-    width: 49%;
-}
-.userSelect-Btn hr{
-    width: 100;
-    border: none;
-    height: 6px;
-    background: #D2D2D2;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-.active a{
-    color: #0B9789;
-}
-.active hr{
-    background: #097E72;
-}
 
 
 /* MAIN FORM */
@@ -177,13 +153,10 @@ label{
 }
 
 footer{
-    height: 83px;
-    background: #fff;
     padding: 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 400;
@@ -191,4 +164,9 @@ footer{
     line-height: 19px;
     color: #202020;
 
+}
+@media only screen and (max-width: 490px){
+    .hero{
+        display:none;
+    }
 }

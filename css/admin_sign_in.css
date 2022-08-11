@@ -26,8 +26,9 @@ main{
 .hero{
     width: 50%;
     color: #202020;
-    padding:1% 5% 0% 5%;
-    background: url('../images/green\ circle.png')  center  no-repeat;
+    padding:0%;
+    background: url('../images/green\ circle.png')  center  no-repeat,
+    url('../images/red\ circle.png') top 150px right 150px no-repeat;
 }
 .sign_up_Desc{
     backdrop-filter: blur(60px);
@@ -46,6 +47,7 @@ main{
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0em;
+    margin:0 2% 2% 10%;
 }
 
 /* the left side banner and its content */
