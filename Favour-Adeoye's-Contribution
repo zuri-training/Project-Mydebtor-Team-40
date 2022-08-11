@@ -1,0 +1,16 @@
+MODEL AND AUTHENTICATION
+Using Django and Django rest framework, I contributed in creating a rough template model for the custom users, school and which involved overriding the abstract user and auth model, and relating it to other models which were Student and School. This was pooled with other teammates' and reviewed then modified to be fine-tuned by my teammates.
+I also contributed in the installation of the social auth package for Google OAUTH2, assisted in configuring it into the settings.py file; this was also perfected by my teammates. During the course of this, an email was created for the project by me.
+
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/NewProject40/settings.py
+
+INFO_HUB APP
+I wrote the serializer and viewsets for all the models in the app; Post, Comment and Newsletter. I created a signals.py file such that every one who signs up as a user gets their email sent to Newsletter model and also a validator for the Newsletter Model so that emails are only registered once. 
+I wrote a simple router urls which was later modified by my teammates.
+
+https://github.com/zuri-training/Team40-MyDebtor/tree/main/info_hub
+
+Requirements.txt 
+I pip freezed the dependencies of the modules used in the project into a requirements.txt file for easy installatation when another person wants to launch the project on his/her own local machine.
+
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/requirements.txt
