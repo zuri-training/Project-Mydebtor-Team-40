@@ -41,7 +41,7 @@ main{
     color: #202020;
 }
 .pageTitle p{
-    font-family: 'Manrope';
+    font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
