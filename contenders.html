@@ -66,21 +66,21 @@
 
        <div class="contender_board">
             <div class="contender_tab">
-                <button class="contendBtn active">
+                <button id="totalBtn" class="contendBtn active">
                     <div><h3>20</h3></div>
                     <div>
                         <p>Total</p>
                         <p>Contenders</p>
                     </div>
                 </button>
-                <button class="contendBtn">
+                <button id="pendingBtn" class="contendBtn">
                     <div><h3>5</h3></div>
                     <div>
                         <p>Pending</p>
                         <p>Contenders</p>
                     </div>
                 </button>
-                <button class="contendBtn">
+                <button id="resolvedBtn" class="contendBtn">
                     <div><h3>15</h3></div>
                     <div>
                         <p>Resolved</p>
@@ -102,7 +102,437 @@
                     </div>
                 </div>
 
-                <div class="debtor_list">
+                <!-- Total contenders -->
+                <div class="debtor_list total_contenders">
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- PENDING CONTENDERS -->
+                <div class="debtor_list pending_contenders">
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
 
                     <div class="debtor_details">
                         <!-- debtor image -->
@@ -136,7 +566,190 @@
 
                 </div>
 
+                <!-- resolved contenders -->
+                <div class="debtor_list resolved_contenders">
 
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="debtor_details">
+                        <!-- debtor image -->
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <!-- debtor info -->
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status">
+                                <div class="status_indicator resolved"></div><span>Pending</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/message-textnav_message.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
 
             </div>
        </div>
@@ -145,5 +758,6 @@
     
 <script src="javascript/dashboard.js"></script>
 <script src="javascript/student.js"></script>
+<script src="javascript/contenders.js"></script>
 </body>
 </html>

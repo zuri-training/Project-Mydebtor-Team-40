@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 1024px;
+    overflow-x: hidden;
+}
+
 .contender_board{
     margin: 5%;
     display: flex;
@@ -138,8 +143,20 @@
     /* color: #0EAD69; */
     background-color: #FCA311;
 }
+.resolved{
+    background-color: green;
+}
 
 .dtr_img img{
     width: 60px;
     height: 60px;
+}
+
+
+.pending_contenders{
+    display: none;
+}
+
+.resolved_contenders{
+    display: none;
 }

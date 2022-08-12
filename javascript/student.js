@@ -17,13 +17,13 @@ const final_submitBtn = document.querySelector('#saveBtn_3')
 add_student.addEventListener('click', function(){
     initial_display.style.display = 'none';
     student_biodata_display.style.display = 'block';
-    return_span.style.display = 'inline';
+    // return_span.style.display = 'inline';
 })
 
 // return to the dashboard (out of the form)
 returnBtn.addEventListener('click', function(){
     initial_display.style.display = 'flex';
-    return_span.style.display = 'none';
+    // return_span.style.display = 'none';
     student_biodata_display.style.display = 'none';
     sponsor_biodata_display.style.display = 'none';
     finance_display.style.display = 'none';
@@ -32,14 +32,14 @@ returnBtn.addEventListener('click', function(){
 student_biodata_saveBtn.addEventListener('click', function(){
     student_biodata_display.style.display = 'none';
     sponsor_biodata_display.style.display = 'block';
-    return_span.style.display = 'inline';
+    // return_span.style.display = 'inline';
 })
 
 // go to finance page from sponsor page
 sponsor_biodata_saveBtn.addEventListener('click', function(){
     sponsor_biodata_display.style.display = 'none';
     finance_display.style.display = 'block';
-    return_span.style.display = 'inline';
+    // return_span.style.display = 'inline';
 })
 
 
@@ -47,14 +47,14 @@ sponsor_biodata_saveBtn.addEventListener('click', function(){
 sponsor_biodata_prevBtn.addEventListener('click', function(){
     student_biodata_display.style.display = 'block';
     sponsor_biodata_display.style.display = 'none';
-    return_span.style.display = 'inline';
+    // return_span.style.display = 'inline';
 })
 
 // return to sponsor biodata page form finance page
 finance_prevBtn.addEventListener('click', function(){
     finance_display.style.display = 'block';
     sponsor_biodata_display.style.display = 'none';
-    return_span.style.display = 'inline';
+    // return_span.style.display = 'inline';
 })
 
 
