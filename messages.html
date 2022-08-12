@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/dashboard_student.css">
     <link rel="stylesheet" href="css/message.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <title>Message - Administrator</title>
 </head>
 <body>
@@ -28,15 +29,14 @@
             
         </div>
         <div class="nav_icon">
-            <a href=""><i class="fa fa-xl fa-bell" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-xl fa-envelope" aria-hidden="true"></i></a>
+            <a href=""><img src="images/notificationnav_bell.png" alt=""></a>
+            <a href=""><img src="images/message-textnav_message.png" alt=""></a>
         </div>
         <div class="schoolBtn">
             <img src="images/principal3.png" alt="">
             <button>Rosy College</button>
         </div>
     </nav>
-    <!-- sidebar -->
     
 
     <!-- main dashboard body -->
@@ -44,37 +44,49 @@
         <div id="sidebar">
     
             <div class="sidebar_icon--panel">
-                <ul>
-                    <li class="side_tab"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a></li>
-                    <li class="side_tab"><a href="dashboard_student.html">Debtors</a></li>
-                    <li class="side_tab"><a href="information_hub.html">Information Hub</a> </li>
-                    <li class="side_tab"><a href="contenders.html">Contenders</a> </li>
-                    <li class="active_side side_tab"><a href="messages.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Messages</a></li>
-                    <li class="side_tab"><a href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
-                    <li class="side_tab"><a href="admin_sign_in.html">Logout</a> </li>
-                </ul>
+                <div>
+                    <ul>
+                        <li class="side_tab"><a href="index.html"><img class="iconic" src="images/homedashboard.png" alt=""></i>Dashboard</a></li>
+                        <li class="side_tab"><a href="dashboard_student.html"><img class="iconic" src="images/profile-2userdebtor.png" alt=""> Debtors</a></li>
+                        <li class="side_tab"><a href="information_hub.html"><img class="iconic" src="images/book.png" alt=""> Information Hub</a> </li>
+                        <li class="side_tab"><a href="contenders.html"><img class="iconic" src="images/alarmnormal.png" alt=""> Contenders</a> </li>
+                        <li class="active_side side_tab"><a href="messages.html"><img class="iconic" src="images/Vectorcolored.png" alt=""> Message</a></li>
+                        <li class="side_tab"><a href="settings.html"><img class="iconic" src="images/setting-2.png" alt=""> Settings</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="side_tab log_out"><a href="admin_sign_in.html"><img class="iconic" src="images/login.png" alt=""> Logout</a> </li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
 
         <div class="messaging">
             <div class="contact-box">
                 <div class="contact_box--header">
-
+                    <h3>Rosy College</h3>
                 </div>
                 <div>
-                    <div class="">
+                    <div class="contact-box__search">
                         <div>
-                            <button class=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
-                        <div class="">
-                            <input type="text" placeholder="">
+                        <div class="contact_input">
+                            <input type="text" placeholder="Search">
                         </div>
-                        
                     </div>
                 </div>
             </div>
 
-            <div class="messaging_box"></div>
+            <div class="messaging_box">
+                <h3>Select a message</h3>
+                <p>Select a message
+                    Choose from your existing conversations, start a a new one.</p>
+                <button>New Message</button>
+            </div>
         </div>
 
     </section>

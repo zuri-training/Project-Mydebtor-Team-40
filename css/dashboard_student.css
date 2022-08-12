@@ -30,8 +30,8 @@
     flex-direction: column;
     gap: 4px;
     box-sizing: border-box;
-    width: 169px;
-    height: 169px;
+    width: 180px;
+    height: 100px;
     background: #FFFFFF;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -41,11 +41,11 @@
     margin-bottom: 5%;
 }
 .dashboard__student--tab h3{
-    font-family: 'Manrope';
+    font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .dashboard__student--tab:hover{
@@ -63,12 +63,34 @@
     padding: 2% 5%;
 
 }
+
+.debtor_history--before{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_list button{
+    padding: 12px 20px;
+    width: 140px;
+    background: #097E72;
+    border-radius: 6px;
+    border: none;
+    font-family:var(--manrope_font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
 .debtor_search{
     padding: 8px 0px 8px 8px;
     gap: 8px;
     width: 15%;
 }
-
+.debtor_list{
+    display: flex;
+}
 
 .student_biodata, .sponsor_biodata, .finance{
     display: none;

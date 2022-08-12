@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/dashboard_student.css">
+    <link rel="stylesheet" href="css/contender.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <title>Debtors -- StuDebt</title>
 </head>
@@ -29,8 +30,8 @@
             
         </div>
         <div class="nav_icon">
-            <a href=""><i class="fa fa-xl fa-bell" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-xl fa-envelope" aria-hidden="true"></i></a>
+            <a href=""><img src="images/notificationnav_bell.png" alt=""></a>
+            <a href=""><img src="images/message-textnav_message.png" alt=""></a>
         </div>
         <div class="schoolBtn">
             <img src="images/principal3.png" alt="">
@@ -45,15 +46,23 @@
         <div id="sidebar">
     
             <div class="sidebar_icon--panel">
-                <ul>
-                    <li class="side_tab"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a></li>
-                    <li class="active_side side_tab"><a href="dashboard_student.html">Debtors</a></li>
-                    <li class="side_tab"><a href="information_hub.html">Information Hub</a> </li>
-                    <li class="side_tab"><a href="contenders.html">Contenders</a> </li>
-                    <li class="side_tab"><a href="messages.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Message</a></li>
-                    <li class="side_tab"><a href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
-                    <li class="side_tab"><a href="admin_sign_in.html">Logout</a> </li>
-                </ul>
+                <div>
+                    <ul>
+                        <li class="side_tab"><a href="index.html"><img class="iconic" src="images/homedashboard.png" alt=""></i>Dashboard</a></li>
+                        <li class="active_side side_tab"><a href="dashboard_student.html"><img class="iconic" src="images/profile-2usercolored.png" alt=""> Debtors</a></li>
+                        <li class="side_tab"><a href="information_hub.html"><img class="iconic" src="images/book.png" alt=""> Information Hub</a> </li>
+                        <li class="side_tab"><a href="contenders.html"><img class="iconic" src="images/alarmnormal.png" alt=""> Contenders</a> </li>
+                        <li class="side_tab"><a href="messages.html"><img class="iconic" src="images/message-textnav_message.png" alt=""> Message</a></li>
+                        <li class="side_tab"><a href="settings.html"><img class="iconic" src="images/setting-2.png" alt=""> Settings</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="side_tab log_out"><a href="admin_sign_in.html"><img class="iconic" src="images/login.png" alt=""> Logout</a> </li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
 
@@ -61,17 +70,59 @@
         <div class="dashboard dashboard__student">
             <button class="dashboard__student--tab" id="addStudent_Btn">
                 <!-- add student -->
+                <img src="images/Group 140addstudent.png" alt="">
                 <h3>Add Contenders</h3>
             </button>
 
             <div class="debtor_history">
-                <div class="debtor_search admin_search">
-                    <div>
-                        <button class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <!-- button and input in the debtor list -->
+                <div class="debtor_history--before">
+                    <!-- POST LIST BUTTON -->
+                    <div class="post_list">
+                        <button>Post List</button>
                     </div>
-                    <div class="search_input">
-                        <input type="text" placeholder="Search...">
+                    <!-- SEARCH INPUT -->
+                    <div class="debtor_search admin_search">
+                        <div>
+                            <button class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="search_input">
+                            <input type="text" placeholder="Search...">
+                        </div>
                     </div>
+                </div>
+                
+                <!-- debtor list to be posted -->
+                <div class="debtor_list">
+
+                    <div class="debtor_details">
+                        <div>
+                            <div class="dtr_img"><img src="images/principal3.png" alt=""></div>
+                        </div>
+                        <div class="debtor_overview">
+                            <div class="debtor_basics">
+                                <div class="dtr_id"><p>10021</p></div>
+                                <div class="dtr_name">John Lorem Doe</div>
+                                <div class="dtr_gender">Male</div>
+                                <div class="dtr_debt">50,000</div>
+                                <div class="dtr_class">SSS2</div>
+                                <div class="dtr_debt_desc">Tution</div>
+                            </div>
+
+                            <!-- debtor status -->
+                            <div class="debtor_status debtor_school">
+                                <i></i><span>Rosy College</span>
+                            </div>
+
+                            <!-- debtor plugs -->
+                            <div class="debtor_plug">
+                                <button><img src="images/edit-2.png" alt=""></button>
+                                <button><img src="images/profile-delete.png" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
         </div>

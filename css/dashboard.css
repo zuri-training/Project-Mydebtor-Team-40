@@ -5,7 +5,7 @@
 
 
 body{
-    background: #D2D2D2;
+    background: #EFEBEB;
 }
 button{
     cursor: pointer;
@@ -90,8 +90,10 @@ nav h3{
     width: 5%;
     margin-right: 8%;
 }
-.nav_icon a i{
-    color: #202020;
+
+.nav_icon a img{
+    width: 24px;
+    height: 24px;
 }
 
 .schoolBtn{
@@ -125,25 +127,37 @@ nav h3{
 /* sidebar */
 #sidebar{
     width: 19%;
-    height: 939px;
+    height: 739px;
     background: #FFFFFF;
     border-right: 1px solid #D2D2D2;
+    margin-right: 4%;
 }
 
 .sidebar_icon--panel{
-    width: 82%;
+    width: 100%;
+    height: 90vh;
     margin-top: 20%;
     margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .side_tab{
     list-style: none;
     box-sizing: border-box;
-    padding: 16px 8px;
+    padding: 13px 8px;
     width: 100%;
-    background:#fff;
-    border-radius: 4px;
+    padding-right: 0;
+    margin-bottom: 10px;
 }
+.iconic{
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-right: 15px;
+}
+
 .side_tab a{
     text-decoration: none;
     color: #454545;
@@ -154,20 +168,22 @@ nav h3{
     font-size: 16px;
     box-sizing: border-box;
 }
-.side_tab a i{
-    margin-right: 10%;
-}
 
 .active_side{
-    border-left: 3px solid #04322E;
+    border-left: 4px solid #097E72;
 }
 
-/* .active_side a{
-    color: #fff;
-} */
+.active_side a{
+    color: #097E72;
+}
+.log_out a{
+    color: red;
+}
+
 .dashboard{
     width: 80%;
     margin: 3% 4%;
+
 }
 .dashboard_section{
     display: flex;
