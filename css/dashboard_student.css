@@ -56,12 +56,10 @@
 }
 
 .debtor_history{
-    height: 400px;
     background: #FFFFFF;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    padding: 2% 5%;
-
+    padding: 2% 2%;
 }
 
 .debtor_history--before{
@@ -84,12 +82,9 @@
     color: #FFFFFF;
 }
 .debtor_search{
-    padding: 8px 0px 8px 8px;
+    padding: 4px;
     gap: 8px;
-    width: 15%;
-}
-.debtor_list{
-    display: flex;
+    width: 20%;
 }
 
 .student_biodata, .sponsor_biodata, .finance{
