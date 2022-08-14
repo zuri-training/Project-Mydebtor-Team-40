@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup_response.css">
+    <link rel="stylesheet" href="css/school_details.css">
+    <title>Sign Up - StuDebt</title>
+</head>
+<body>
+    <main>
+        <div class="sign_up_Desc">
+            <div class="logo">
+              <img src="images\landing_logo.png" alt="Studebt_logo">  
+            </div>
+            
+            <div class="pageTitle">
+                <h1>Welcome to StuDebt</h1>
+                <p>Sign Up to get started</p>
+            </div>
+        </div>
+
+        <!-- the form and its content -->
+        <div class="sign_up_Form">
+            
+            <!-- STAGE ONE, SCHOOL INFO -->
+            <div class="userForm stage_one">
+                <div class="completion_status">
+                    <div class="stage_bar active_bar"></div>
+                    <div class="stage_bar"></div>
+                    <div class="stage_bar"></div>
+                </div>
+
+                <form action="">
+                    <!-- school name -->
+                    <div class="input_area outline">
+                        <div>
+                            <label for="">Name</label>
+                        </div>
+                        <div>
+                            <input class="max_input" type="text" placeholder="Enter school name">
+                        </div>
+                    </div>
+                    
+                    <!-- State the school is located -->
+                    <div class="input_area">
+                        <div class="outline sectA">
+                            <div>
+                               <label for="">State</label> 
+                            </div>
+                            <div>
+                                <select class="min_input" name="State" id="State">
+                                    <option class="select" value="">Select State</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Local Government the school is located -->
+                        <div class="outline sectA">
+                            <div class="sectA--TAB">
+                                <label for="">Local Government Area</label>
+                            </div>
+                            <div>
+                                <select class="min_input" name="" id="">
+                                    <option class="select" value="">Select LGA</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input_area outline">
+                        <div>
+                            <label for="">Street Address</label>
+                        </div>
+                        <div>
+                            <input class="max_input" type="text" placeholder="Enter street address">
+                        </div>
+                    </div>
+
+                    <div class="input_area">
+                        <div class="outline sectA">
+                            <div>
+                                <label for="">Registration Number</label>
+                            </div>
+                            <div>
+                                <input class="min_input" type="text" placeholder="Enter school name">
+                            </div>
+                        </div>
+                        
+                        <div class="outline sectA">
+                            <div class="sectA--TAB">
+                              <label for="">School Category</label>  
+                            </div>
+                            <div>
+                                <select class="min_input" name="" id="">
+                                    <option class="select" value="">Enter school category</option>
+                                    <option value="">Primary</option>
+                                    <option value="">Secondary</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="submitBtn continueBtn" id="contBtn1" type="submit">Continue</button>
+                </form>
+            </div>
+            
+            <!-- STAGE TWO, PRINCIPAL INFO -->
+            <div class="userForm stage_two">
+                <div class="completion_status">
+                    <div class="stage_bar active_bar"></div>
+                    <div class="stage_bar active_bar"></div>
+                    <div class="stage_bar"></div>
+                </div>
+
+                <form action="">
+                    <!-- school name -->
+                    <div class="input_area outline">
+                        <div>
+                            <label for="">Name</label>
+                        </div>
+                        <div>
+                            <input class="max_input" type="text" placeholder="Enter principal's name">
+                        </div>
+                    </div>
+                    
+                    <!-- State the school is located -->
+                    <div class="input_area">
+                        <div class="outline sectA">
+                            <div>
+                               <label for="">Gender</label> 
+                            </div>
+                            <div>
+                                <select class="min_input" name="State" id="State">
+                                    <option class="select" value="">--Select Gender--</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Local Government the school is located -->
+                        <div class="outline sectA">
+                            <div class="sectA--TAB">
+                                <label for="">Date of Birth</label>
+                            </div>
+                            <div>
+                                <input class="min_input" type="date" name="" id="" placeholder="Select date of birth">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input_area outline">
+                        <div>
+                            <label for="">Street Address</label>
+                        </div>
+                        <div>
+                            <input class="max_input" type="text" placeholder="Enter street address">
+                        </div>
+                    </div>
+
+                    <div class="input_area">
+                        <div class="outline sectA">
+                            <div>
+                                <label for="">Identification Number</label>
+                            </div>
+                            <div>
+                                <select class="min_input" name="" id="">
+                                    <option value="">--Select Identification--</option>
+                                    <option value="">National Identification Number</option>
+                                    <option value="">Voter's Card</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        
+                        <div class="outline sectA">
+                            <div class="sectA--TAB">
+                              <label for="">Identification Number</label>  
+                            </div>
+                            <div>
+                                <input class="min_input" type="text" name="" id="" placeholder="Enter identification number">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="submitBtn continueBtn" id="contBtn2"
+                      type="submit">Continue</button>
+                </form>
+            </div>
+
+            <!-- STAGE THREE, UPLOAD CREDENTIALS -->
+            <div class="userForm stage_three">
+                <div class="completion_status">
+                    <div class="stage_bar active_bar"></div>
+                    <div class="stage_bar active_bar"></div>
+                    <div class="stage_bar active_bar"></div>
+                </div>
+
+                <form action="">
+                    <!-- credentials -->
+                    <div class="input_area outline">
+                        <div class="biodata--image">
+                            <div class="biodata--image_Btn">
+                                <input type="file" id="profile_picture">
+                                <label for="profile_picture" class="uploadBtn">Upload Image</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="submitBtn continueBtn" id="contBtn2"
+                      type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

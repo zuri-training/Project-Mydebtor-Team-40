@@ -1,0 +1,12 @@
+I am working on the followings with our project backend coordinator:
+Create routers for all the apps of the project
+customizing admin site for each app
+
+Links: 
+Back End: https://github.com/zuri-training/Team40-MyDebtor
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/mydebtors/urls.py
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/mydebtors/admin.py
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/core/urls.py
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/info_hub/urls.py
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/info_hub/admin.py
+https://github.com/zuri-training/Team40-MyDebtor/blob/main/NewProject40/urls.py

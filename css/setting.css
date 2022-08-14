@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.messaging{
+    display: flex;
+    gap: 20px;
+}
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.contact_box--header{
+    
+}

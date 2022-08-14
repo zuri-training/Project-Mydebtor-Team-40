@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --manrope_font: 'Manrope', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1024px;
+    overflow-x: hidden;
+}
+
+.contender_board{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 73%;
+}
+.contender_tab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contendBtn{
+    width: 150px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 3%;
+    border: none;
+}
+.active{
+    background: #097E72;
+}
+
+.contendBtn h3{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #454545;
+}
+
+.contendBtn p{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #454545;
+}
+
+.active h3, .active p{
+    color: #FFFFFF;
+}
+
+
+.contender_display{
+    width: 100%;
+    height: 1184px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 3% 2%;
+}
+
+.contender_search{
+    width: 100%;
+    margin-left: 73%;
+}
+
+.debtor_list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.debtor_details{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.debtor_overview{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 24px 0px 10px;
+    border-bottom: 1px solid #D2D2D2;
+    border-radius: 8px;
+    gap: 40px;
+}
+.debtor_plug button{
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.debtor_plug button img{
+    width: 20px;
+    height: 20px;
+}
+
+.debtor_basics{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #454545;
+}
+.debtor_status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #454545;
+}
+
+.status_indicator{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    margin-right: 5px;
+    /* color: #0EAD69; */
+    background-color: #FCA311;
+}
+.resolved{
+    background-color: green;
+}
+
+.dtr_img img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.pending_contenders{
+    display: none;
+}
+
+.resolved_contenders{
+    display: none;
+}

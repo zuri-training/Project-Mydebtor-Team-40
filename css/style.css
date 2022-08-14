@@ -9,7 +9,11 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: var(--manrope_font);
+}
+body{
+    background: no-repeat url('../images/sign_up2.png');
 }
 main{
     display: flex;
@@ -47,32 +51,49 @@ main{
 .sign_up_Desc h1{
     font-family: var(--manrope_font);
     font-style: normal;
+
     font-weight: 700;
     font-size: 56px;
     letter-spacing: 1.2px;
+
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 66px;
+    color: #202020;
 
 }
 .sign_up_Desc p{
 
     font-style: normal;
+
     font-weight: 500;
     font-size: 18px;
 
 }
 
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #202020;
 
-/* the form and its content */
+
+}
 
 .sign_up_Form{
     width: 53%;
+    padding: 0 10%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+
     justify-content: center; 
     padding: 0 130px;
 }
 
 
+
+    align-items: center;
+    justify-content: center;
+}
 
 /* MAIN FORM */
 .userForm{
@@ -137,9 +158,7 @@ label{
     border-radius: 4px;
 }
 
-.caution_text{
-    width: 100%;
-}
+
 .caution_text p{
     font-size: 14px;
     font-family: var(--manrope_font);

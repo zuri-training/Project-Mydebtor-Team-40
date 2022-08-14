@@ -1,0 +1,23 @@
+.completion_status{
+    /* padding: 0 5%; */
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage_bar{
+    width: 112px;
+    height: 8px;
+    background: #D2D2D2;
+    border-radius: 4px;
+}
+
+.active_bar{
+    background: #07655B;
+}
+
+.stage_one, .stage_two{
+    display: none;
+}
