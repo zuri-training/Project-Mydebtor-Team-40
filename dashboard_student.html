@@ -71,7 +71,7 @@
             <button class="dashboard__student--tab" id="addStudent_Btn">
                 <!-- add student -->
                 <img src="images/Group 140addstudent.png" alt="">
-                <h3>Add Contenders</h3>
+                <h3>Add Debtor</h3>
             </button>
 
             <div class="debtor_history">
@@ -216,21 +216,21 @@
         <div class="dashboard bio_data student_biodata">
             <div>
                 <div class="form_stage--indicator">
-                <div class="indication active_indicator">
-                    <div><h3>Debtor's Biodata</h3></div>
-                    <div class="indicator"></div>
+                    <div class="indication active_indicator">
+                        <div><h3>Debtor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication">
+                        <div><h3>Sponsor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication">
+                        <div><h3>Finance</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    
                 </div>
-                <div class="indication">
-                    <div><h3>Sponsor's Biodata</h3></div>
-                    <div class="indicator"></div>
-                </div>
-                <div class="indication">
-                    <div><h3>Finance</h3></div>
-                    <div class="indicator"></div>
-                </div>
-                
             </div>
-
             <div class="biodata--entry">
                 <div class="biodata--image">
                     <div class="biodata--image_passport">
@@ -373,36 +373,46 @@
         </div>
 
         <!-- SPONSOR BIODATA -->
-        <div class="bio_data sponsor_biodata">
-            <div class="form_stage--indicator">
-                <div class="indicator "></div>
-                <div class="indicator active_indicator"></div>
-                <div class="indicator"></div>
+        <div class="dashboard bio_data sponsor_biodata">
+            <div>
+                <div class="form_stage--indicator">
+                    <div class="indication active_indicator">
+                        <div><h3>Debtor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication active_indicator">
+                        <div><h3>Sponsor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication">
+                        <div><h3>Finance</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="student info"></div>
-            <br>
-            <h2>Sponsor Biodata</h2>
+
             <form action="">
                 <div class="form_layer">
                     <div class="form_layer--slide">
-                        <!-- sponsor name -->
+                        <!-- firstname -->
                         <div class="form_layer--slide_input">
                             <div>
-                                <label for="">Sponsor's Name</label>
+                                <label for="">First Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="Mr Doe Flemmingo">
+                                <input type="text" name="" id="" placeholder="First Name">
                             </div>
                         </div>
                         
 
-                        <!-- sponsor relationship -->
+                        <!-- relationship -->
                         <div class="form_layer--slide_input">
                             <div>
                                 <label for="">Relationship</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="Father">
+                                <input type="text" name="" id="" placeholder="Fatther">
                             </div>
                         </div>
                     </div>
@@ -410,13 +420,13 @@
 
                 <div class="form_layer">
                     <div class="form_layer--slide">
-                        <!-- National ID -->
+                        <!-- lastname -->
                         <div class="form_layer--slide_input">
                             <div>
-                                <label for="">National Identity Number</label>
+                                <label for="">Last Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="0000000000">
+                                <input type="text" name="" id="" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -435,19 +445,28 @@
                                     </select>
                                 </div>
                             </div>
+
+                            <div class="double_tab_sect">
+                                <div>
+                                    <label for="">NIN</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="" id="" placeholder="NIN">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form_layer">
                     <div class="form_layer--slide">
-                        <!-- Home address -->
+                        <!-- email address -->
                         <div class="form_layer--slide_input">
                             <div>
-                                <label for="">Home Address</label>
+                                <label for="">Email Address</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="5, Isaac John Street">
+                                <input type="emaii" name="" id="" placeholder="name@example.com">
                             </div>
                         </div>
                         
@@ -458,7 +477,7 @@
                                 <label for="">State of Origin</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="Lagos">
+                                <input type="text" name="" id="" placeholder="State of origin">
                             </div>
                         </div>
                     </div>
@@ -466,24 +485,24 @@
 
                 <div class="form_layer">
                     <div class="form_layer--slide">
-                        <!-- Phone number -->
+                        <!-- Phone Number -->
                         <div class="form_layer--slide_input">
                             <div>
                                 <label for="">Phone Number</label>
                             </div>
                             <div>
-                                <input type="number" name="" id="" placeholder="000-0000-0000">
+                                <input type="text" name="" id="" placeholder="000-000-000-00">
                             </div>
                         </div>
                         
 
-                        <!-- email Address -->
+                        <!-- Address -->
                         <div class="form_layer--slide_input">
                             <div>
-                                <label for="">Email Address</label>
+                                <label for=""> Residence Address</label>
                             </div>
                             <div>
-                                <input type="email" name="" id="" placeholder="xyz@yahoo.com">
+                                <input type="text" name="" id="" placeholder="Residence Address">
                             </div>
                         </div>
                     </div>
@@ -491,16 +510,29 @@
             </form>
             <button class="saveBtn" id="prevBtn_1">Previous</button>
             <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
+            </div>
+            
         </div>
 
         <!-- FINANCE FORM -->
-        <div class="bio_data finance">
-            <div class="form_stage--indicator">
-                <div class="indicator "></div>
-                <div class="indicator"></div>
-                <div class="indicator active_indicator"></div>
+        <div class="dashboard bio_data finance">
+            <div>
+                <div class="form_stage--indicator">
+                    <div class="indication active_indicator">
+                        <div><h3>Debtor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication active_indicator">
+                        <div><h3>Sponsor's Biodata</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indication active_indicator">
+                        <div><h3>Finance</h3></div>
+                        <div class="indicator"></div>
+                    </div>
+                    
+                </div>
             </div>
-            <h2>Finance</h2>
             <br>
             <form action="">
                 <div class="form_layer">
@@ -511,7 +543,7 @@
                                 <label for="">Session</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="20/21">
+                                <input type="text" name="" id="" placeholder="Session">
                             </div>
                         </div>
                         
@@ -522,7 +554,7 @@
                                 <label for="">Term</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="2nd Term">
+                                <input type="text" name="" id="" placeholder="Term">
                             </div>
                         </div>
                     </div>
@@ -536,7 +568,7 @@
                                 <label for="">Total Fee</label>
                             </div>
                             <div>
-                                <input type="number" name="" id="" placeholder="200000">
+                                <input type="number" name="" id="" placeholder="Amount">
                             </div>
                         </div>
                         
@@ -550,8 +582,8 @@
                                 <div>
                                     <select name="" id="">
                                         <option value="">--Select Category--</option>
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
+                                        <option value="">Tuition</option>
+                                        <option value="">Damages</option>
                                     </select>
                                 </div>
                             </div>
@@ -567,7 +599,7 @@
                                 <label for="">Outstanding Fee</label>
                             </div>
                             <div>
-                                <input type="number" name="" id="" placeholder="50000">
+                                <input type="number" name="" id="" placeholder="Amount">
                             </div>
                         </div>
                     </div>
@@ -576,9 +608,161 @@
             <button class="saveBtn" id="prevBtn_2">Previous</button>
             <button class="saveBtn" id="saveBtn_3">Save</button>
         </div>
+
+        <!-- GENERAL VIEW -->
+        <div class="dashboard overview_page">         
+            <div class="overview">
+                <div class="primary_overview">
+                    <div>
+                        <h3>Debtor's Biodata</h3>
+                    </div>
+                    
+                    <div class="primary_container">
+                        <div class="debtor_img">
+                        </div>
+                        <div class="primary_info">
+                            <!-- Line 1 -->
+                            <div class="line">
+                                <div>
+                                    <h3>Registration Number</h3>
+                                    <p class="dtr_reg_no">10021</p>
+                                </div>
+
+                                <div>
+                                    <h3>First Name</h3>
+                                    <p class="dtr_FN">John</p>
+                                </div>
+
+                                <div>
+                                    <h3>Date of Birth</h3>
+                                    <p class="dtr_DB">22/11/2006</p>
+                                </div>
+
+                                <div>
+                                    <h3>State of Origin</h3>
+                                    <p class="dtr_SO">Lagos</p>
+                                </div>
+                            </div>
+
+                            <!-- Line 2 -->
+                            <div class="line">
+                                <div class="invisible">
+                                    <h3>Registration Number</h3>
+                                    <p class="dtr_reg_no">10021</p>
+                                </div>
+                                <div>
+                                    <h3>Middle Name</h3>
+                                    <p class="dtr_FN">Lorem</p>
+                                </div>
+
+                                <div>
+                                    <h3>Gender</h3>
+                                    <p class="dtr_GR">Male</p>
+                                </div>
+
+                                <div>
+                                    <h3>Nationality</h3>
+                                    <p class="dtr_NT">Nigeria</p>
+                                </div>
+                            </div>
+
+                            <!-- Line 3 -->
+                            <div class="line">
+                                <div class="invisible">
+                                    <h3>Registration Number</h3>
+                                    <p class="dtr_reg_no">10021</p>
+                                </div>
+
+                                <div>
+                                    <h3>Last Name</h3>
+                                    <p class="dtr_FN">Doe</p>
+                                </div>
+
+                                <div>
+                                    <h3>Class</h3>
+                                    <p class="dtr_Cls">SS2</p>
+                                </div>
+
+                                <div>
+                                    <h3>Residence Address</h3>
+                                    <p class="dtr_RA">15, Uni Road Akoka Lagos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="secondary_overview">
+                    <div class="sec_view">
+                        <h3>Sponsor's Data</h3>
+                        <div class="content">
+                            <div class="tag"><h4>First Name</h4></div>
+                            <div><p>Oliver</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Last Name</h4></div>
+                            <div><p>Doe</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Relationship</h4></div>
+                            <div><p>Father</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Gender</h4></div>
+                            <div><p>Male</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Email Address</h4></div>
+                            <div><p>doe22@gmail.com</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Phone Number</h4></div>
+                            <div><p>+2348186908146</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>NIN</h4></div>
+                            <div><p>000000000</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Residence Address</h4></div>
+                            <div><p>15 Uni Road Akoka Lagos</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="sec_view">
+                        <h3>Sponsor's Data</h3>
+                        <div class="content">
+                            <div class="tag"><h4>Session</h4></div>
+                            <div><p>2020/2021</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Term</h4></div>
+                            <div><p>2nd Term</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Total Fee</h4></div>
+                            <div><p>200,000</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Debt</h4></div>
+                            <div><p>50,000</p></div>
+                        </div>
+                        <div class="content">
+                            <div class="tag"><h4>Debt Catergory </h4></div>
+                            <div><p>Tuition</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="saveBtn" id="prevBtn_3">Edit Profile</button>
+            <button class="saveBtn" id="saveBtn_4">Save</button>
+        </div>
+
     </section>
     
-<script src="javascript/dashboard.js"></script>
+<!-- <script src="javascript/dashboard.js"></script> -->
 <script src="javascript/student.js"></script>
 </body>
 </html>

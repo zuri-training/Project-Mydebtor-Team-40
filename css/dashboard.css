@@ -5,7 +5,7 @@
 
 
 body{
-    background: #EFEBEB;
+    background: #F6F6F6;
 }
 button{
     cursor: pointer;
@@ -220,19 +220,15 @@ nav h3{
     width: 169px;
     height: 169px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     color: #202020;
 }
-
 .dashboard__history--tab:hover{
-    background-color: #097E72;
-    border: 2px solid black;
-    color: white;
-    box-shadow: #04322E 5px 5px 2px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .dashboard__history--tab h3{
     font-family: var(--manrope_font);

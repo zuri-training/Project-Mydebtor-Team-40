@@ -25,15 +25,28 @@
     border-radius: 16px;
 }
 .contact_box--header{
-    padding: 4px 8px;
+    padding: 5px 8px;
+    padding-top: 25px;
+    box-sizing: border-box;
     width: 100%;
     height: 68px;
     background: #E8E8E8;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    display: flex;
+    gap: 50px;
 }
 
-.contact-box--header h3{
+.contact_box--header button{
+    border: none;
+    background: transparent;
+}
+.contact_box--header button img{
+    height: 24px;
+    width: 24px;
+}
+
+.contact_box--header h3{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
@@ -45,18 +58,21 @@
 .contact-box__search{
     display: flex;
     padding: 12px;
-    width: 90%;
+    width: 80%;
     background: #FFFFFF;
     border: 1px solid #04322E;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 5%;
+    margin-left: 5%;
 }
 
 .contact_searchBtn{
     
 }
-
+.contact_input input{
+    border: none;
+}
 
 .messaging_box{
     width: 54%;
@@ -64,24 +80,29 @@
     background: #FFFFFF;
     border-radius: 16px;
 }
-
-.messaging_box h3{
+.start_messaging{
+    margin-top: 30%;
+    margin-left: 15%;
+}
+.start_messaging h3{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #04322E;
+    margin-bottom: 20px;
 }
-.messaging_box p{
+.start_messaging p{
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 22px;
     color: rgba(4, 50, 46, 0.5);
+    margin-bottom: 20px;
 }
-.messaging_box button{
+.start_messaging button{
     padding: 12px 20px;
     gap: 8px;
     width: 140px;
@@ -94,4 +115,54 @@
     line-height: 22px;
     color: #FFFFFF;
     border: none;
+}
+
+.messaging_arena{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.arena_contact{
+    width: 100%;
+    height: 80px;
+    background: #E8E8E8;
+    border-radius: 8px;
+}
+
+.texting_area{
+    box-sizing: border-box;
+    width: 90%;
+    height: 60px;
+    left: 19px;
+    bottom: 21px;
+    border: 1px solid #04322E;
+    border-radius: 16px;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+}
+.texting_area input{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CEEAE7;
+    border: none;
+}
+.texting_area button{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CEEAE7;
+    border: none;
+    background: transparent;
+    padding: 20px 20px;
 }

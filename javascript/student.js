@@ -11,6 +11,7 @@ const sponsor_biodata_saveBtn = document.querySelector('#saveBtn_2')
 const sponsor_biodata_prevBtn = document.querySelector('#prevBtn_1')
 const finance_prevBtn = document.querySelector('#prevBtn_2')
 const final_submitBtn = document.querySelector('#saveBtn_3')
+const overview_display = document.querySelector('.overview_page')
 
 
 
@@ -18,16 +19,16 @@ add_student.addEventListener('click', function(){
     initial_display.style.display = 'none';
     student_biodata_display.style.display = 'block';
     // return_span.style.display = 'inline';
-})
+});
 
 // return to the dashboard (out of the form)
-returnBtn.addEventListener('click', function(){
-    initial_display.style.display = 'flex';
-    // return_span.style.display = 'none';
-    student_biodata_display.style.display = 'none';
-    sponsor_biodata_display.style.display = 'none';
-    finance_display.style.display = 'none';
-})
+// returnBtn.addEventListener('click', function(){
+//     initial_display.style.display = 'flex';
+//     // return_span.style.display = 'none';
+//     student_biodata_display.style.display = 'none';
+//     sponsor_biodata_display.style.display = 'none';
+//     finance_display.style.display = 'none';
+// });
 // go to sponsor page from student page
 student_biodata_saveBtn.addEventListener('click', function(){
     student_biodata_display.style.display = 'none';
@@ -58,7 +59,12 @@ finance_prevBtn.addEventListener('click', function(){
 })
 
 
-// navigating student biodata pages
+// navigating from finance page to overview
+
+final_submitBtn.addEventListener("click", function(){
+    finance_display.style.display = "none"
+    overview_display.style.display = "block"
+})
 
 
 

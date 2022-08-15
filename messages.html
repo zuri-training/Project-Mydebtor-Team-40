@@ -67,7 +67,10 @@
         <div class="messaging">
             <div class="contact-box">
                 <div class="contact_box--header">
-                    <h3>Rosy College</h3>
+                    <div><h3>Rosy College</h3></div>
+                    <div><button><img src="images/message-add.png" alt=""></button></div>
+                    
+                    
                 </div>
                 <div>
                     <div class="contact-box__search">
@@ -82,10 +85,20 @@
             </div>
 
             <div class="messaging_box">
-                <h3>Select a message</h3>
-                <p>Select a message
-                    Choose from your existing conversations, start a a new one.</p>
-                <button>New Message</button>
+                <div class="start_messaging">
+                    <h3>Select a message</h3>
+                    <p>Select a message
+                        Choose from your existing conversations, start a a new one.</p>
+                    <button id="newMessage">New Message</button>
+                </div>
+
+                <div class="messaging_arena">
+                    <div class="arena_contact"></div>
+                    <div class="texting_area">
+                        <div><input type="text" placeholder="Type a new message"></div>
+                        <div><button>Post</button></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -93,5 +106,6 @@
     
 <script src="javascript/dashboard.js"></script>
 <script src="javascript/student.js"></script>
+<script src="javascript/message.js"></script>
 </body>
 </html>

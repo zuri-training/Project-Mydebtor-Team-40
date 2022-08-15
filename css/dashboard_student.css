@@ -2,9 +2,11 @@
 :root{
     --manrope_font: 'Manrope', sans-serif;
 }
+
 #dashboard{
     position: relative;
 }
+
 .dashboard__student h1 span{
     font-family: var(--manrope_font);
     font-style: normal;
@@ -14,6 +16,7 @@
     color: #04322E;
     display: none;
 }
+
 .returnBtn{
     background: transparent;
     border: 2px solid rgba(4, 50, 46, 0.5);
@@ -46,13 +49,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-}
-
-.dashboard__student--tab:hover{
-    background-color: #097E72;
-    border: 2px solid black;
-    color: white;
-    box-shadow: #04322E 5px 5px 2px;
 }
 
 .debtor_history{
@@ -97,12 +93,14 @@
     gap: 5%;
     margin: 3% 5%;
 }
+
 .indication{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .indication h3{
     font-family: var(--manrope_font);
     font-style: normal;
@@ -118,9 +116,11 @@
     background: #CEEAE7;;
     border-radius: 100px;
 }
+
 .active_indicator .indicator{
     background: #097E72;
 }
+
 .active_indicator h3{
     color: #202020;
 }
@@ -226,10 +226,13 @@ form{
     display: flex;
     justify-content: space-between;
 }
+.double_tab_sect{
+    width: 40%;
+}
 .double_tab_sect select{
     width: 100%;
     box-sizing: border-box;
-    padding: 12px;
+    padding: 11px 8px;
     border: 1px solid #021E1B;
 }
 
@@ -238,7 +241,7 @@ form{
     padding: 12px 0px;
     width: 140px;
     background: #097E72;
-    font-family: 'Manrope';
+    font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -246,10 +249,146 @@ form{
     text-align: center;
     color: #FFFFFF;
     border: none;
+    border-radius: 6px;
 }
-#prevBtn_1, #prevBtn_1{
-    float: left;
+
+
+#prevBtn_1, #prevBtn_2, #prevBtn_3{
+    margin-left: 5%;
+    background: #FFFFFF;
+    border: 1.4px solid #097E72;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #097E72;
 }
-#saveBtn_1, #saveBtn_2, #saveBtn_3{
-    float: right;
+#saveBtn_1{
+    margin-left: 77%;
+} 
+
+#saveBtn_2, #saveBtn_3, #saveBtn_4{
+    margin-left: 55%;
+}
+
+
+.overview_page{
+    display: none;
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.primary_overview{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 515px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    gap: 50px;
+    width: 100%;
+}
+
+.primary_overview h3, .sec_view h3{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #097E72;
+}
+
+.primary_container{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.debtor_img{
+    width: 200px;
+    height: 230px;
+    border-radius: 80px;
+    background: no-repeat url('../images/principal3.png');
+    background-size: cover;
+}
+
+
+.primary_info{
+    display: flex;
+    gap: 20px;
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.invisible{
+    visibility: hidden;
+}
+
+.primary_info h3{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #454545;
+}
+
+.primary_info p{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #454545;
+}
+
+.secondary_overview{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sec_view{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 396px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 7.76023px;
+    padding: 3%;
+    gap: 5%;
+}
+
+.content{
+    display: flex;
+    gap: 50px;
+}
+
+.tag{
+    width: 119px;
+}
+.content h4{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #202020;
+}
+.content p{
+    font-family: var(--manrope_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #202020;
 }
