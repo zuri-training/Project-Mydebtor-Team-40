@@ -2,11 +2,15 @@
 :root{
     --manrope_font: 'Manrope', sans-serif;
 }
-
+body{
+    background-color:  #EFEBEB;;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: var(--manrope_font);
 }
 body{
     background: no-repeat url('../images/sign_up2.png');
@@ -14,39 +18,64 @@ body{
 main{
     display: flex;
     width: 100%;
-    height: 100vh;
+    
 }
 
 /* the left side banner and its content */
-.sign_up_Desc{
-    width: 47%;
-    color: #fff;
-    padding: 5% 8%;
+.logo{
+    margin: 1% 5%;
 }
+
 .logo img{
-    height: 50px;
-    width: 220px;
+    width: 150px;
 }
-.pageTitle{
-    width: 376px;
-    height: 228px;
-    margin-top: 120px;
+.hero{
+    width: 50%;
+    color: #202020;
+    padding:0%;
+    background: url('../images/green\ circle.png')  center  no-repeat,
+    url('../images/red\ circle.png') top 100px right 200px no-repeat;
+    
 }
-.pageTitle h1{
+.sign_up_Desc .text_box{
+    margin:2% 10% 2% 10%;
+}
+.sign_up_Desc{
+    backdrop-filter: blur(60px);
+}
+.sign_up_Desc .image_box{
+    display:grid;
+    place-items: center;
+}
+
+.sign_up_Desc h1{
     font-family: var(--manrope_font);
     font-style: normal;
+
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 1.2px;
+
     font-weight: 800;
     font-size: 48px;
     line-height: 66px;
     color: #202020;
+
 }
-.pageTitle p{
-    font-family: var(--manrope_font);
+.sign_up_Desc p{
+
     font-style: normal;
+
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #202020;
+
 
 }
 
@@ -55,9 +84,17 @@ main{
     padding: 0 10%;
     display: flex;
     flex-direction: column;
+
+    justify-content: center; 
+    padding: 0 130px;
+}
+
+
+
     align-items: center;
     justify-content: center;
 }
+
 /* MAIN FORM */
 .userForm{
     width: 100%;
@@ -135,13 +172,10 @@ label{
 }
 
 footer{
-    height: 83px;
-    background: #fff;
     padding: 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-family: var(--manrope_font);
     font-style: normal;
     font-weight: 400;
@@ -149,4 +183,9 @@ footer{
     line-height: 19px;
     color: #202020;
 
+}
+@media only screen and (max-width: 490px){
+    .hero{
+        display:none;
+    }
 }

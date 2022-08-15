@@ -45,11 +45,14 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-
-  console.log(slideIndex)
+  
+  if(window.screen.width <= 490){
+    slides[slideIndex]?slides[slideIndex].style.display = "block":slides[0].style.display = "block";
+  }
+  else{
   slides[slideIndex-1].style.display = "block";
   slides[slideIndex]?slides[slideIndex].style.display = "block":slides[0].style.display = "block"; 
-
+  }
 
 }
  
@@ -87,3 +90,5 @@ for(var i=0; i<dropdown.length;i++){
 
 }
 //frequently asked questions
+
+console.log(window.screen.width);

@@ -82,24 +82,24 @@ p{
     display:fixed;
 
 }
-.first_box .right_side{
+.first_section .right_side{
     width:50%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    
 }
-.first_section .image_box{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    flex-direction: row;
-}
-.first_section .right_side .image_box img{
-    height:450px;
-}
-.first_section .right_side .first{
-    width:300px;
+
+.first_section .right_side img{
     height:450px;
     object-position: center;
     border-radius:10px;
     object-fit: cover;
+    width:100%;
+}
+.first_section .right_side .first {
+    width:45%;
+
 }
 /* .first_section .right_side .first:hover{
     width:150px;
@@ -113,12 +113,7 @@ p{
 .first_section .right_side .second,
 
 .first_section .right_side .third{
-    width:150px;
-    object-fit: cover;
-    height:450px;
-    margin-left:3%;
-    border-radius:10px;
-    object-position: center;
+    width:25%;
 }
 
 
@@ -202,10 +197,10 @@ width:50%;
     margin-bottom: 5%;
 }
 .fourth_section .school_box{
-    display: flex;
     overflow: auto hidden;
-    white-space: nowrap;
-    flex-direction: column;
+}
+.fourth_section .school_box .row:not(:first-child){
+    margin-left:12%;
 }
 .fourth_section .school_box::-webkit-scrollbar {
     display: none;
@@ -213,27 +208,24 @@ width:50%;
 .fourth_section .row{
     display:flex;
     margin:2%;
+    flex-direction: row;
 }
 .fourth_section .school{
-    display:grid;
-    grid-template-columns: auto auto;
-    align-items:center;
-    width: 200px;
-    margin-right:2%;
-    word-wrap: break-word;
-    word-break: break-all;
+    width:200px;
+    margin-right:5%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 .fourth_section .row .image_box img{
     width:42px;
     height:42px;
-    margin-right:5px;
+    object-fit: cover;
+    margin-right:15px;
 }
 .fourth_section .school .title_box{
-    overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    font-size: 10px;
+    font-size: 12px;
 }
 /* end of trusted by 100 schools  */
 
@@ -372,10 +364,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
 /* what happy clients say about us  */
 
 /* frequently asked questions  */
@@ -394,7 +383,7 @@ img {vertical-align: middle;}
 .seventh_section .question {
     display: flex;
     justify-content: space-between;
-    padding:2%;
+    padding:4% 2%;
     background-color: #E5E7EB;
 }
 .seventh_section .question i{
@@ -497,10 +486,15 @@ color: rgba(0, 0, 0, 0.3);
         margin:5%;
         text-align: center;
     }
-    .first_section .right_side .image_box  img:not(:first-child){
+    .first_section .right_side div:not(:first-child){
         display:none
     }
-    .first_section .right_side .image_box img{
+    .first_section .right_side .first,
+    .first_section .right_side .second,
+    .first_section .right_side .third{
+        width:100%
+    }
+    .first_section .right_side img{
         width:100%;
         border-radius: 6px;
         height:300px;
@@ -556,11 +550,49 @@ color: rgba(0, 0, 0, 0.3);
         width:310px;
     }
     /* trusted by 100 schools  */
-    
+
     /* trusted by 100 schools  */
     /* our services to explore  */
     .eight_section .grid{
         padding:3%
     }
+    .mySlides{
+        width:90%;
+    }
+    .prev, .next,.text {
+        font-size: 11px;
+    margin:0 ;
+    width:35px;
+    height:35px;
+    }
+    /* frequently asked questions  */
+    .seventh_section{
+        margin:5%;
+    }
+    .seventh_section .title h2,
+    .seventh_section .title p{
+       text-align: center;
+    }
+    .seventh_section .questions{
+        width:100%;
+    }
+    /* frequently asked questions  */
+
+    /* join 1000 subscribers  */
+    .eight_section .grid{
+        margin:2%;
+    }
+    .eight_section  .subscribe_box{
+        flex-direction: column;
+    }
+    .eight_section .subscribe_box .button-group{
+        margin-top:3%;
+    }
+    .eight_section .subscribe_box .button-group button,
+    .eight_section .subscribe_box input{
+        width: 100%;
+    }
+    /* join 1000 subscribers  */
+
 }
 /* responsive design  */
