@@ -12,21 +12,30 @@
 </head>
 <body>
     <!-- landing page header -->
-    <nav>
-        <div class="image_logo">
-            <img src="images/landing_logo.png" alt="">
+        <!-- navigation bar  -->
+        <nav id="myTopnav" class="nav hide">
+            <div class="image_logo">
+                <img src="images/landing_logo.png" alt="">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+              <div class="nav_links" id="nav_links">
+                  <a href="landing_page.html" class="link active">Home</a>
+                  <a href="how_it_works.html" class="link">How It Works</a>
+                  <a href="about.html" class="link">About Us</a>
+                  <a href="contact.html" class="link">Contact Us</a>
+              </div>
+              <div class="nav_buttons button-group" id="nav_buttons">
+                  <button class="sign_in">Sign In</button>
+                  <button class="register">Register</button>
+              </div>
+          </div>
+          <div  class="icon" >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
         </div>
-        <div class="nav_links" id="nav_links">
-            <a href="landing_page.html" class="link">Home</a>
-            <a href="#" class="link">How It Works</a>
-            <a href="about.html" class="link">About Us</a>
-            <a href="contact.html" class="link active">Contact Us</a>
-        </div>
-        <div class="nav_buttons button-group">
-            <a class="sign_in" href="admin_sign_in.html">Log In</a>
-            <a class="register" href="admin_sign_up.html">Register</a>
-        </div>
-    </nav>
+        </nav>
+        <!-- navigation bar  -->
 <!-- first section in landing page -->
     <section id="section">
         <div id="headline">
@@ -139,5 +148,6 @@
     </footer>
 
     <script src="javascript/landing_page.js"></script>
+    <script src="javascript/navigation.js"></script>
 </body>
 </html>
