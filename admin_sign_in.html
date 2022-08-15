@@ -33,7 +33,7 @@
             
             <!-- login form  --> 
             <div class="userForm">
-                <form action="">
+                <form onsubmit="adminSignIn(event)">
 
                     <!-- email address  -->               
                     <div class="input_area outline">
@@ -41,7 +41,7 @@
                             <label for="">Email Address</label>
                         </div>
                         <div>
-                            <input class="max_input" type="email" placeholder="Enter school email address">
+                            <input id="email" class="max_input" type="email" placeholder="Enter school email address">
                         </div>
                     </div>
                     <!-- email address  -->  
@@ -53,7 +53,7 @@
                             <label for="">Password</label>
                         </div>
                         <div>
-                            <input class="max_input" type="password" placeholder="Enter password">
+                            <input class="max_input" id="password" type="password" placeholder="Enter password">
                         </div>
                         <div class="lower_text">
                             <div>
@@ -84,6 +84,6 @@
             <p>All Rights  Reserved.</p>
         </footer>
     <!-- footer  -->
-
+<script src="./javascript/auth/admin-auth.js"></script>
 </body>
 </html>

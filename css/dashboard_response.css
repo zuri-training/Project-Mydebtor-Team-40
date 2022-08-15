@@ -1,0 +1,107 @@
+@media (max-width: 425px){
+    /* for the nav section */
+    nav{
+        height: 56px;
+    }
+
+    .admin_search{
+        width: 10%;
+        border: none;
+        height: 50%;
+        /* margin-left: 57%; */
+    }
+
+    nav h3{
+        display: none;
+    }
+
+    .search_input{
+        display: none;
+    }
+    .schoolBtn{
+        width: 30px;
+        margin-left: -5%;
+    }
+    .schoolBtn button{
+        display: none;
+    }
+    .schoolBtn img{
+        width: 24px;
+        height: 24px;
+        /* margin-left: 100%; */
+    }
+
+    .nav_icon{
+        display: none;
+    }
+
+    .logo{
+        width: 92px;
+        margin-left: 37%;
+    }
+    .logo img{
+        height: 24px;
+    }
+
+    /* SIDEBAR */
+    #sidebar{
+        width: 56px;
+        height: 800px;
+        margin-left: -56px;
+    }
+    .side_tab a{
+        color: transparent;
+        font-size: 0;
+    }
+
+    /* DASHBOARD DISPLAY{ */
+    .dashboard_section{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .dashboard__history{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 110%;
+    }
+    .history_container{
+        /* width: 100%; */
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .dashboard__history h1, .dashboard_message h1, .dashboard__view--title h2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .dashboard__history--tab{
+        width: 136px;
+        height: 136px;
+    }
+    .dashboard__history--tab h3{
+        font-size: 14px;
+    }
+    .dashboard__history--tab p{
+        font-size: 12px;
+    }
+    .dashboard__history--tab img{
+        width: 32px;
+        height: 32px;
+    }
+    .sender_name{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .send_time{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .message_content p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .message_photo img{
+        width: 32px;
+        height: 32px;
+    }
+}
