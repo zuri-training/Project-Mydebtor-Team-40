@@ -1,4 +1,4 @@
-const ADMIN_SIGNIN_URL = "http://127.0.0.1:8000/auth/jwt/create/"
+const ADMIN_SIGNIN_URL = "http://127.0.0.1:8000/auth/jwt/create"
 
 let isSubmitting = false
 

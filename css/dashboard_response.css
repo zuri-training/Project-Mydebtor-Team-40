@@ -1,14 +1,21 @@
 @media (max-width: 425px){
     /* for the nav section */
+
     nav{
         height: 56px;
+    }
+    .hamburger{
+        display: block;
+        height: 100%;
+    }
+    .cancelBtn{
+        display: none;
     }
 
     .admin_search{
         width: 10%;
         border: none;
         height: 50%;
-        /* margin-left: 57%; */
     }
 
     nav h3{
@@ -37,8 +44,9 @@
 
     .logo{
         width: 92px;
-        margin-left: 37%;
+        margin-left: 25%;
     }
+
     .logo img{
         height: 24px;
     }
@@ -103,5 +111,34 @@
     .message_photo img{
         width: 32px;
         height: 32px;
+    }
+
+/* DASHBOARD TO ADD STUDENT */
+    .dashboard{
+        width: 100%;
+        margin: 0;
+    }
+    .dashboard__student--tab{
+        border: 1px solid red;
+    }
+    /* debtor biodata */
+    .indicator{
+        width: 100px;
+        height: 4px;
+    }
+
+    .post_list button{
+        padding: 12px 20px;
+        width: 140px;
+        background: transparent;
+        border-radius: 6px;
+        border: none;
+        font-family:var(--manrope_font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        border: 1px solid red;
     }
 }

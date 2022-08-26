@@ -32,9 +32,9 @@ nav h3{
     align-items: center;
     background: #fff;
     height: 68px;
-    width: 4%;
-    margin-left: -1%;
+    display: none;
 }
+
 .hamburger button{
     background: transparent;
     border: none;
@@ -133,6 +133,8 @@ nav h3{
     background: #FFFFFF;
     border-right: 1px solid #D2D2D2;
     margin-right: 2%;
+    transition: .5s;
+    /* position: absolute; */
 }
 
 .sidebar_icon--panel{
