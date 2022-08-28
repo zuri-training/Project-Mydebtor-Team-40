@@ -55,11 +55,16 @@
     #sidebar{
         width: 56px;
         height: 800px;
-        margin-left: -56px;
+        position: absolute;
+        left: -70px;
+        /* margin-left: -62px; */
     }
     .side_tab a{
         color: transparent;
         font-size: 0;
+    }
+    .dashboard{
+        width: 90%;
     }
 
     /* DASHBOARD DISPLAY{ */
@@ -73,72 +78,210 @@
         gap: 20px;
         width: 110%;
     }
+    .dashboard_message{
+        width: 100%;
+    }
     .history_container{
         /* width: 100%; */
         flex-wrap: nowrap;
         overflow-x: scroll;
     }
+
     .dashboard__history h1, .dashboard_message h1, .dashboard__view--title h2{
         font-size: 12px;
         line-height: 20px;
     }
+
     .dashboard__history--tab{
         width: 136px;
         height: 136px;
     }
+
     .dashboard__history--tab h3{
         font-size: 14px;
     }
+
     .dashboard__history--tab p{
         font-size: 12px;
     }
+
     .dashboard__history--tab img{
         width: 32px;
         height: 32px;
     }
+
     .sender_name{
         font-size: 12px;
         line-height: 20px;
     }
+
     .send_time{
         font-size: 10px;
         line-height: 20px;
     }
+
     .message_content p{
         font-size: 10px;
         line-height: 20px;
     }
+
     .message_photo img{
         width: 32px;
         height: 32px;
     }
 
-/* DASHBOARD TO ADD STUDENT */
-    .dashboard{
+    .debtor_history{
         width: 100%;
-        margin: 0;
     }
-    .dashboard__student--tab{
-        border: 1px solid red;
+
+    #addStudent_Btn{
+        width: 80%;
+        height: 84px;
+        border-radius: 4px;
+        margin: auto;
+        margin-bottom: 15px;
     }
-    /* debtor biodata */
-    .indicator{
+
+    #addStudent_Btn img{
+        width: 21.46px;
+        height: 21.46px;
+    }
+
+    #addStudent_Btn h3{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #postList button{
+        background: transparent;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+    }
+    .form_stage--indicator .indication h3{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .indication .indicator{
         width: 100px;
         height: 4px;
     }
-
-    .post_list button{
-        padding: 12px 20px;
-        width: 140px;
-        background: transparent;
-        border-radius: 6px;
-        border: none;
-        font-family:var(--manrope_font);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        border: 1px solid red;
+    .biodata--image .biodata--image_passport img{
+        width: 92px;
+        height: 92px;
     }
+
+    
+    .contender_tab .contendBtn{
+        width: 103px;
+        height: 57px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    .contender_tab .contendBtn h3{
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .contender_tab .contendBtn p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    /* .debtor_details{
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .debtor_details .debtor_overview{
+        gap: 0px;
+        padding: 0px 0px 10px;
+        border-radius: 0px;
+    }
+    .debtor_details .dtr_img img{
+        width: 38px;
+        height: 38px;
+    }
+
+    .debtor_overview .debtor_basics, .debtor_overview .debtor_status{
+        font-size: 12px;
+        line-height: 20px;
+        gap: 10px;
+    }
+
+    .debtor_basics .dtr_id, .debtor_basics .dtr_gender, .debtor_basics .dtr_class{
+        display: none;
+    }
+    .plug_btn{
+        display: none;
+    }
+    .more_btn{
+        display: block;
+    }
+    /* FORM */
+    .form_layer--slide, .double_tab{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .form_layer--slide .form_layer--slide_input, .double_tab .double_tab_sect{
+        width: 100%;
+    }
+
+    .student_biodata #saveBtn_1{
+        width: 90%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 4%;
+    }
+
+    .sponsor_biodata #prevBtn_1,.finance #prevBtn_2, #prevBtn_3{
+        margin-left: 0%;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
+    
+    .sponsor_biodata #saveBtn_2, .finance #saveBtn_3,.overview_page #saveBtn_4{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 70px;
+    }
+    .overview .primary_overview{
+        gap: 20px;
+    }
+
+    .overview .primary_overview h3, .overview .sec_view h3{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .content .tag h4{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .sec_view .content p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .primary_container .debtor_img{
+        width: 72px;
+        height: 72px;
+        border-radius: 92.1767px;
+    }
+    .primary_container .primary_info h3{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    .primary_container .primary_info p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .primary_info .line{
+        gap: 10px;
+    }
+
 }

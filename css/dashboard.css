@@ -124,17 +124,16 @@ nav h3{
 #dashboard{
     /* padding-right: 3%; */
     display: flex;
+    justify-content: center;
     /* gap: 4%; */
 }
-/* sidebar */
+
 #sidebar{
     width: 19%;
     height: 739px;
     background: #FFFFFF;
     border-right: 1px solid #D2D2D2;
-    margin-right: 2%;
     transition: .5s;
-    /* position: absolute; */
 }
 
 .sidebar_icon--panel{
@@ -187,11 +186,13 @@ nav h3{
 .dashboard{
     width: 80%;
     margin: 3% 4%;
-
+    border: 1px solid red;
 }
+
 .dashboard_section{
     display: flex;
 }
+
 .dashboard__history{
     display: flex;
     flex-direction: column;

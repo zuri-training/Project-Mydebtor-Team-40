@@ -5,13 +5,13 @@ const showBtn = document.querySelector('.open_sidebar');
 const hideBtn = document.querySelector('.cancelBtn');
 
 showBtn.addEventListener('click', function(){
-    sidebar.style.marginLeft = '0'
+    sidebar.style.left = '0'
     showBtn.style.display = 'none'
     hideBtn.style.display = 'block'
 });
 
 hideBtn.addEventListener('click', function(){
-    sidebar.style.marginLeft = '-56px'
+    sidebar.style.left = '-70px'
     showBtn.style.display = 'block'
     hideBtn.style.display = 'none'
 });
