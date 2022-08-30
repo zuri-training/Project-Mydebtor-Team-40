@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="" method="post" id="form">
                 <div class="form_layer">
                     <div class="form_layer--slide">
                         <!-- firstname -->
@@ -260,7 +260,7 @@
                                 <label for="">First Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="firstname_fill" placeholder="First Name">
+                                <input type="text" name="first_name" id="firstname_fill" placeholder="First Name">
                             </div>
                         </div>
                         
@@ -271,7 +271,7 @@
                                 <label for="">Middle Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="mid_name_fill" placeholder="Middle Name">
+                                <input type="text" name="middle_name" id="mid_name_fill" placeholder="Middle Name">
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                                 <label for="">Last Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="lastname_fill" placeholder="Last Name">
+                                <input type="text" name="last_name" id="lastname_fill" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -297,10 +297,11 @@
                                     <label for="">Gender</label>
                                 </div>
                                 <div>
-                                    <select name="" id="gender_fill">
+
+                                    <select name="gender" id="gender_fill">
                                         <option value="">--Select Gender--</option>
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
+                                        <option name="Male" value="Male">Male</option>
+                                        <option name="Female" value="Female">Female</option>
                                     </select>
                                 </div>
                             </div>
@@ -310,14 +311,14 @@
                                     <label for="">Class</label>
                                 </div>
                                 <div>
-                                    <select name="" id="class_fill">
+                                    <select name="student_class" id="class_fill">
                                         <option value="">--Select Class--</option>
-                                        <option value="">Primary 1</option>
-                                        <option value="">Primary 2</option>
-                                        <option value="">Primary 3</option>
-                                        <option value="">Primary 4</option>
-                                        <option value="">Primary 5</option>
-                                        <option value="">Primary 6</option>
+                                        <option value="primary 1">Primary 1</option>
+                                        <option value="primary 2">Primary 2</option>
+                                        <option value="primary 3">Primary 3</option>
+                                        <option value="primary 4">Primary 4</option>
+                                        <option value="primary 5">Primary 5</option>
+                                        <option value="primary 6">Primary 6</option>
                                     </select>
                                 </div>
                             </div>
@@ -333,7 +334,7 @@
                                 <label for="">Date of Birth</label>
                             </div>
                             <div>
-                                <input type="date" name="" id="DOB_fill" placeholder="First Name">
+                                <input type="date" name="date_of_birth" id="DOB_fill" placeholder="First Name">
                             </div>
                         </div>
                         
@@ -344,7 +345,9 @@
                                 <label for="">State of Origin</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="state_fill" placeholder="State of origin">
+
+                                <input type="text" name="state" id="state_fill" placeholder="State of origin">
+
                             </div>
                         </div>
                     </div>
@@ -358,7 +361,7 @@
                                 <label for="">Nationality</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="nationality_fill" placeholder="Nationality">
+                                <input type="text" name="nationality" id="nationality_fill" placeholder="Nationality">
                             </div>
                         </div>
                         
@@ -369,11 +372,12 @@
                                 <label for=""> Residence Address</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="address_fill" placeholder="Residence Address">
+                                <input type="text" name="address" id="address_fill" placeholder="Residence Address">
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="saveBtn" id="saveBtn_1">Save & Proceed</button>
             </form>
             <button class="saveBtn" id="saveBtn_1">Save & Proceed</button>
             
@@ -399,7 +403,7 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="" method="post" id="sponsForm">
                 <div class="form_layer">
                     <div class="form_layer--slide">
                         <!-- firstname -->
@@ -408,7 +412,7 @@
                                 <label for="">First Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="Sfirstname_fill" placeholder="First Name">
+                                <input type="text" name="first_name" id="Sfirstname_fill" placeholder="First Name">
                             </div>
                         </div>
                         
@@ -419,7 +423,7 @@
                                 <label for="">Relationship</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="relationship_fill" placeholder="Fatther">
+                                <input type="text" name="relationship" id="relationship_fill" placeholder="Fatther">
                             </div>
                         </div>
                     </div>
@@ -433,7 +437,8 @@
                                 <label for="">Last Name</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="Slastname_fill" placeholder="Last Name">
+
+                                <input type="text" name="last_name" id="Slastname_fill" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -445,10 +450,11 @@
                                     <label for="">Gender</label>
                                 </div>
                                 <div>
-                                    <select name="" id="Sgender_fill">
+
+                                    <select name="gender" id="Sgender_fill">
                                         <option value="">--Select Gender--</option>
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
                                     </select>
                                 </div>
                             </div>
@@ -458,7 +464,7 @@
                                     <label for="">NIN</label>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="nin_fill" placeholder="NIN">
+                                    <input type="text" name="NIN" id="nin_fill" placeholder="NIN">
                                 </div>
                             </div>
                         </div>
@@ -473,7 +479,7 @@
                                 <label for="">Email Address</label>
                             </div>
                             <div>
-                                <input type="emaii" name="" id="email_fill" placeholder="name@example.com">
+                                <input type="emaii" name="email" id="email_fill" placeholder="name@example.com">
                             </div>
                         </div>
                         
@@ -484,7 +490,7 @@
                                 <label for="">State of Origin</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="Sstate_fill" placeholder="State of origin">
+                                <input type="text" name="state" id="Sstate_fill" placeholder="State of origin">
                             </div>
                         </div>
                     </div>
@@ -498,7 +504,8 @@
                                 <label for="">Phone Number</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="Sphone_fill" placeholder="000-000-000-00">
+
+                                <input type="text" name="phone" id="Sphone_fill" placeholder="000-000-000-00">
                             </div>
                         </div>
                         
@@ -509,15 +516,19 @@
                                 <label for=""> Residence Address</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="Saddress_fill" placeholder="Residence Address">
+
+                                <input type="text" name="address" id="Saddress_fill" placeholder="Residence Address">
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="saveBtn" id="prevBtn_1">Previous</button>
+                <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
             </form>
+
             <button class="saveBtn" id="prevBtn_1">Previous</button>
             <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
-        
             
         </div>
 
@@ -541,7 +552,7 @@
                 </div>
             </div>
             <br>
-            <form action="">
+            <form action="" method="post" id="finForm">
                 <div class="form_layer">
                     <div class="form_layer--slide">
                         <!-- session -->
@@ -550,7 +561,8 @@
                                 <label for="">Session</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="session" placeholder="Session">
+                                <input type="text" name="session" id="session" placeholder="Session">
+
                             </div>
                         </div>
                         
@@ -561,7 +573,8 @@
                                 <label for="">Term</label>
                             </div>
                             <div>
-                                <input type="text" name="" id="term" placeholder="Term">
+
+                                <input type="text" name="term" id="term" placeholder="Term">
                             </div>
                         </div>
                     </div>
@@ -575,7 +588,8 @@
                                 <label for="">Total Fee</label>
                             </div>
                             <div>
-                                <input type="number" name="" id="fee" placeholder="Amount">
+
+                                <input type="number" name="total_fee" id="fee" placeholder="Amount">
                             </div>
                         </div>
                         
@@ -589,8 +603,8 @@
                                 <div>
                                     <select name="" id="debt_cate">
                                         <option value="">--Select Category--</option>
-                                        <option value="">Tuition</option>
-                                        <option value="">Damages</option>
+                                        <option name="category" value="Tution">Tuition</option>
+                                        <option name="category" value="Damages">Damages</option>
                                     </select>
                                 </div>
                             </div>
@@ -606,14 +620,16 @@
                                 <label for="">Outstanding Fee</label>
                             </div>
                             <div>
-                                <input type="number" name="" id="debt" placeholder="Amount">
+
+                                <input type="number" name="outstanding_fee" id="debt" placeholder="Amount">
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
-            <button class="saveBtn" id="prevBtn_2">Previous</button>
+                <button class="saveBtn" id="prevBtn_2">Previous</button>
             <button class="saveBtn" id="saveBtn_3">Save</button>
+            </form>
         </div>
  
         <!-- GENERAL VIEW -->
@@ -632,7 +648,7 @@
                             <div class="line">
                                 <div>
                                     <h3>Registration Number</h3>
-                                    <p class="dtr_reg_no">10021</p>
+                                    <p class="dtr_reg_no" id="regNo">10021</p>
                                 </div>
 
                                 <div>
@@ -763,13 +779,16 @@
                 </div>
             </div>
 
-            <button class="saveBtn" id="prevBtn_3">Edit Profile</button>
+            <button class="saveBtn" id="prevBtn_2">Edit Profile</button>
             <button class="saveBtn" id="saveBtn_4">Save</button>
         </div>
 
     </section>
    
 <!-- <script src="javascript/dashboard.js"></script> -->
+<script src="./javascript/validation.js"></script>
+<script src="./javascript/sponsRes.js"></script>
+<script src="./javascript/finRes.js"></script>
 <script src="javascript/student.js"></script>
 <script src="javascript/dashboard.js"></script>
 </body>
