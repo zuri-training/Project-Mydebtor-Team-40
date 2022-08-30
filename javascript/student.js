@@ -100,6 +100,9 @@ picture_file.addEventListener('change', function(){
 
 
 function pickup(){
+    document.querySelector('.debtor_img').style.background = `url('${picture_file.value}')`;
+    console.log(picture_file.value);
+    console.log(document.querySelector('.debtor_img').style.background);
     // student info
     const firstname_fill = document.getElementById('firstname_fill').value;
     const middlename_fill = document.getElementById('mid_name_fill').value;
@@ -132,7 +135,7 @@ function pickup(){
     const email_fill = document.getElementById('email_fill').value;
     const Sstate_fill = document.getElementById('Sstate_fill').value;
     const Saddress_fill = document.getElementById('Saddress_fill').value;
-    const Sphone_fill = document.getElementById('').value
+    const Sphone_fill = document.getElementById('Sphone_fill').value
 
     // **************
     document.querySelector('.S_FN').innerText = Sfirstname_fill;
@@ -145,6 +148,20 @@ function pickup(){
     document.querySelector('.S_nin').innerText = class_fill;
     document.querySelector('.S_address').innerText = Saddress_fill;
 
+        // finance info
+
+    const session_fill = document.getElementById('session').value;
+    const term_fill = document.getElementById('term').value;
+    const fee_fill = document.getElementById('fee').value;
+    const debt_fill = document.getElementById('debt').value;
+    const cate_fill = document.getElementById('debt_cate').value;
+
+    // **************
+    document.querySelector('.session').innerText = session_fill;
+    document.querySelector('.term').innerText = term_fill;
+    document.querySelector('.fee').innerText = fee_fill;
+    document.querySelector('.debt_cate').innerText = cate_fill;
+    document.querySelector('.debt').innerText = debt_fill;
 
 
 }
