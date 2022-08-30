@@ -69,7 +69,8 @@ final_submitBtn.addEventListener("click", function(){
     pickup();
 });
 
-editBtn.addEventListener("click", function(){
+editBtn.addEventListener("click", function(e){
+    e.preventDefault()
     overview_display.style.display = "none";
     student_biodata_display.style.display = "block";
 });
