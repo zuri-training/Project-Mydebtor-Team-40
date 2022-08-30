@@ -22,12 +22,15 @@ body{
     gap: 30px;
     width: 73%;
 }
+
 .contender_tab{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3%;
 }
+
 .contendBtn{
     width: 150px;
     height: 100px;
@@ -109,6 +112,9 @@ body{
 .debtor_plug button img{
     width: 20px;
     height: 20px;
+}
+.more_btn{
+    display:none;
 }
 
 .debtor_basics{

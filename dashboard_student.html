@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dashboard_response.css">
     <link rel="stylesheet" href="css/dashboard_student.css">
     <link rel="stylesheet" href="css/contender.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
@@ -14,6 +15,10 @@
 <body>
     
     <nav>
+        <div class="hamburger">
+            <button class="open_sidebar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <button class="cancelBtn"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
         <div class="logo">
             <img src="images\landing_logo.png" alt="">
         </div>
@@ -38,7 +43,6 @@
             <button>Rosy College</button>
         </div>
     </nav>
-    <!-- sidebar -->
     
 
     <!-- main dashboard body -->
@@ -78,7 +82,7 @@
                 <!-- button and input in the debtor list -->
                 <div class="debtor_history--before">
                     <!-- POST LIST BUTTON -->
-                    <div class="post_list">
+                    <div id="postList" class="post_list">
                         <button>Post List</button>
                     </div>
                     <!-- SEARCH INPUT -->
@@ -116,8 +120,9 @@
 
                             <!-- debtor plugs -->
                             <div class="debtor_plug">
-                                <button><img src="images/edit-2.png" alt=""></button>
-                                <button><img src="images/profile-delete.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/edit-2.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/profile-delete.png" alt=""></button>
+                                <button class="more_btn"><img src="images/more-circle.png" alt=""></button>
                             </div>
                         </div>
                         
@@ -144,8 +149,9 @@
 
                             <!-- debtor plugs -->
                             <div class="debtor_plug">
-                                <button><img src="images/edit-2.png" alt=""></button>
-                                <button><img src="images/profile-delete.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/edit-2.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/profile-delete.png" alt=""></button>
+                                <button class="more_btn"><img src="images/more-circle.png" alt=""></button>
                             </div>
                         </div>
                         
@@ -172,8 +178,9 @@
 
                             <!-- debtor plugs -->
                             <div class="debtor_plug">
-                                <button><img src="images/edit-2.png" alt=""></button>
-                                <button><img src="images/profile-delete.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/edit-2.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/profile-delete.png" alt=""></button>
+                                <button class="more_btn"><img src="images/more-circle.png" alt=""></button>
                             </div>
                         </div>
                         
@@ -200,8 +207,9 @@
 
                             <!-- debtor plugs -->
                             <div class="debtor_plug">
-                                <button><img src="images/edit-2.png" alt=""></button>
-                                <button><img src="images/profile-delete.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/edit-2.png" alt=""></button>
+                                <button class="plug_btn"><img src="images/profile-delete.png" alt=""></button>
+                                <button class="more_btn"><img src="images/more-circle.png" alt=""></button>
                             </div>
                         </div>
                         
@@ -248,8 +256,12 @@
                     <div class="form_layer--slide">
                         <!-- firstname -->
                         <div class="form_layer--slide_input">
+                            <div>
                                 <label for="">First Name</label>
-                                <input type="text" name="first_name" id="" placeholder="First Name">
+                            </div>
+                            <div>
+                                <input type="text" name="first_name" id="firstname_fill" placeholder="First Name">
+                            </div>
                         </div>
                         
 
@@ -259,7 +271,7 @@
                                 <label for="">Middle Name</label>
                             </div>
                             <div>
-                                <input type="text" name="middle_name" id="" placeholder="Middle Name">
+                                <input type="text" name="middle_name" id="mid_name_fill" placeholder="Middle Name">
                             </div>
                         </div>
                     </div>
@@ -273,7 +285,7 @@
                                 <label for="">Last Name</label>
                             </div>
                             <div>
-                                <input type="text" name="last_name" id="" placeholder="Last Name">
+                                <input type="text" name="last_name" id="lastname_fill" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -285,7 +297,8 @@
                                     <label for="">Gender</label>
                                 </div>
                                 <div>
-                                    <select name="gender" id="">
+
+                                    <select name="gender" id="gender_fill">
                                         <option value="">--Select Gender--</option>
                                         <option name="Male" value="Male">Male</option>
                                         <option name="Female" value="Female">Female</option>
@@ -298,7 +311,7 @@
                                     <label for="">Class</label>
                                 </div>
                                 <div>
-                                    <select name="student_class" id="">
+                                    <select name="student_class" id="class_fill">
                                         <option value="">--Select Class--</option>
                                         <option value="primary 1">Primary 1</option>
                                         <option value="primary 2">Primary 2</option>
@@ -321,7 +334,7 @@
                                 <label for="">Date of Birth</label>
                             </div>
                             <div>
-                                <input type="date" name="date_of_birth" id="" placeholder="First Name">
+                                <input type="date" name="date_of_birth" id="DOB_fill" placeholder="First Name">
                             </div>
                         </div>
                         
@@ -332,7 +345,9 @@
                                 <label for="">State of Origin</label>
                             </div>
                             <div>
-                                <input type="text" name="state" id="" placeholder="State of origin">
+
+                                <input type="text" name="state" id="state_fill" placeholder="State of origin">
+
                             </div>
                         </div>
                     </div>
@@ -346,7 +361,7 @@
                                 <label for="">Nationality</label>
                             </div>
                             <div>
-                                <input type="text" name="nationality" id="" placeholder="Nationality">
+                                <input type="text" name="nationality" id="nationality_fill" placeholder="Nationality">
                             </div>
                         </div>
                         
@@ -357,15 +372,14 @@
                                 <label for=""> Residence Address</label>
                             </div>
                             <div>
-                                <input type="text" name="address" id="" placeholder="Residence Address">
+                                <input type="text" name="address" id="address_fill" placeholder="Residence Address">
                             </div>
                         </div>
                     </div>
                 </div>
                 <button class="saveBtn" id="saveBtn_1">Save & Proceed</button>
             </form>
-            
-            </div>
+            <button class="saveBtn" id="saveBtn_1">Save & Proceed</button>
             
         </div>
 
@@ -398,7 +412,7 @@
                                 <label for="">First Name</label>
                             </div>
                             <div>
-                                <input type="text" name="first_name" id="" placeholder="First Name">
+                                <input type="text" name="first_name" id="Sfirstname_fill" placeholder="First Name">
                             </div>
                         </div>
                         
@@ -409,7 +423,7 @@
                                 <label for="">Relationship</label>
                             </div>
                             <div>
-                                <input type="text" name="relationship" id="" placeholder="Fatther">
+                                <input type="text" name="relationship" id="relationship_fill" placeholder="Fatther">
                             </div>
                         </div>
                     </div>
@@ -423,7 +437,7 @@
                                 <label for="">Last Name</label>
                             </div>
                             <div>
-                                <input type="text" name="last_name" id="" placeholder="Last Name">
+                                <input type="text" name="last_name" id="Slastname" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -435,7 +449,7 @@
                                     <label for="">Gender</label>
                                 </div>
                                 <div>
-                                    <select name="gender" id="">
+                                    <select name="gender" id="Sgender">
                                         <option value="">--Select Gender--</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -448,7 +462,7 @@
                                     <label for="">NIN</label>
                                 </div>
                                 <div>
-                                    <input type="text" name="NIN" id="" placeholder="NIN">
+                                    <input type="text" name="NIN" id="nin_fill" placeholder="NIN">
                                 </div>
                             </div>
                         </div>
@@ -463,7 +477,7 @@
                                 <label for="">Email Address</label>
                             </div>
                             <div>
-                                <input type="emaii" name="email" id="" placeholder="name@example.com">
+                                <input type="emaii" name="email" id="email_fill" placeholder="name@example.com">
                             </div>
                         </div>
                         
@@ -474,7 +488,7 @@
                                 <label for="">State of Origin</label>
                             </div>
                             <div>
-                                <input type="text" name="state" id="" placeholder="State of origin">
+                                <input type="text" name="state" id="Sstate_fill" placeholder="State of origin">
                             </div>
                         </div>
                     </div>
@@ -499,7 +513,7 @@
                                 <label for=""> Residence Address</label>
                             </div>
                             <div>
-                                <input type="text" name="address" id="" placeholder="Residence Address">
+                                <input type="text" name="address" id="Saddress" placeholder="Residence Address">
                             </div>
                         </div>
                     </div>
@@ -507,8 +521,9 @@
                 <button class="saveBtn" id="prevBtn_1">Previous</button>
                 <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
             </form>
-           
-            </div>
+
+            <button class="saveBtn" id="prevBtn_1">Previous</button>
+            <button class="saveBtn" id="saveBtn_2">Save & Proceed</button>
             
         </div>
 
@@ -606,7 +621,7 @@
             <button class="saveBtn" id="saveBtn_3">Save</button>
             </form>
         </div>
-
+ 
         <!-- GENERAL VIEW -->
         <div class="dashboard overview_page">         
             <div class="overview">
@@ -628,12 +643,12 @@
 
                                 <div>
                                     <h3>First Name</h3>
-                                    <p class="dtr_FN">John</p>
+                                    <p class="dtr_FN"></p>
                                 </div>
 
                                 <div>
                                     <h3>Date of Birth</h3>
-                                    <p class="dtr_DB">22/11/2006</p>
+                                    <p class="dtr_DB"></p>
                                 </div>
 
                                 <div>
@@ -650,17 +665,17 @@
                                 </div>
                                 <div>
                                     <h3>Middle Name</h3>
-                                    <p class="dtr_FN">Lorem</p>
+                                    <p class="dtr_MN"></p>
                                 </div>
 
                                 <div>
                                     <h3>Gender</h3>
-                                    <p class="dtr_GR">Male</p>
+                                    <p class="dtr_GR"></p>
                                 </div>
 
                                 <div>
                                     <h3>Nationality</h3>
-                                    <p class="dtr_NT">Nigeria</p>
+                                    <p class="dtr_NT"></p>
                                 </div>
                             </div>
 
@@ -673,17 +688,17 @@
 
                                 <div>
                                     <h3>Last Name</h3>
-                                    <p class="dtr_FN">Doe</p>
+                                    <p class="dtr_LN"></p>
                                 </div>
 
                                 <div>
                                     <h3>Class</h3>
-                                    <p class="dtr_Cls">SS2</p>
+                                    <p class="dtr_Cls"></p>
                                 </div>
 
                                 <div>
                                     <h3>Residence Address</h3>
-                                    <p class="dtr_RA">15, Uni Road Akoka Lagos</p>
+                                    <p class="dtr_RA"></p>
                                 </div>
                             </div>
                         </div>
@@ -696,35 +711,35 @@
                         <h3>Sponsor's Data</h3>
                         <div class="content">
                             <div class="tag"><h4>First Name</h4></div>
-                            <div><p>Oliver</p></div>
+                            <div><p class="S_FN"></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Last Name</h4></div>
-                            <div><p>Doe</p></div>
+                            <div><p class="S_LN"></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Relationship</h4></div>
-                            <div><p>Father</p></div>
+                            <div><p class="S_RL"></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Gender</h4></div>
-                            <div><p>Male</p></div>
+                            <div><p S_GR></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Email Address</h4></div>
-                            <div><p>doe22@gmail.com</p></div>
+                            <div><p S_email></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Phone Number</h4></div>
-                            <div><p>+2348186908146</p></div>
+                            <div><p class="S_phone"></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>NIN</h4></div>
-                            <div><p>000000000</p></div>
+                            <div><p class="S_nin"></p></div>
                         </div>
                         <div class="content">
                             <div class="tag"><h4>Residence Address</h4></div>
-                            <div><p>15 Uni Road Akoka Lagos</p></div>
+                            <div><p class="S_address"></p></div>
                         </div>
                         
                     </div>
@@ -759,11 +774,12 @@
         </div>
 
     </section>
-    
+   
 <!-- <script src="javascript/dashboard.js"></script> -->
 <script src="./javascript/validation.js"></script>
 <script src="./javascript/sponsRes.js"></script>
 <script src="./javascript/finRes.js"></script>
 <script src="javascript/student.js"></script>
+<script src="javascript/dashboard.js"></script>
 </body>
 </html>
